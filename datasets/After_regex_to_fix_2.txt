@@ -1,0 +1,34 @@
+(%config)(\s*\(\s*)(\w+)(\s*=)(.*?)(\)\s*)
+(%new)(\s*)(\()(.*?)(\))
+((?:[A-z0-9]+|[A-z\-]+ ?|)(?: the |)(?:[Ss][Pp][Ii][Dd][Ee][Rr]|[Ss]crape|[A-Za-z0-9-]*(?:[^C][^Uu])[Bb]ot|[Cc][Rr][Aa][Ww][Ll])[A-z0-9]*)(?:(?:[ /]| v)(\d+)(?:\.(\d+)|)(?:\.(\d+)|)|)
+((?:^|[^<])<<-?\s*)(\w+?)\s[\s\S]*?(?:\r?\n|\r)\2
+(?:(?!_)\S)+?(?=_)
+(?:/[A-Za-z0-9\.]+|) *([A-Za-z0-9 \-_\!\[\]:]*(?:[Aa]rchiver|[Ii]ndexer|[Ss]craper|[Bb]ot|[Ss]pider|[Cc]rawl[a-z]*))/(\d+)(?:\.(\d+)(?:\.(\d+)|)|)
+(?:/[A-Za-z0-9\.]+|) *([A-Za-z0-9 _\!\[\]:]*(?:[Aa]rchiver|[Ii]ndexer|[Ss]craper|[Bb]ot|[Ss]pider|[Cc]rawl[a-z]*)) (\d+)(?:\.(\d+)(?:\.(\d+)|)|)
+(?:[-\w]|\$[-\w]|#\{\$[-\w]+\})+(?=\s*:)
+(?:[.:\r\n]+(?:\r?\n|\r)$)
+(?:\s+[^>]+)?
+(?:asus.*?ASUS|Asus|ASUS|asus)[\- ;]*((?:Transformer (?:Pad|Prime) |Transformer |Padfone |Nexus[ _]|)[A-Za-z0-9]+)
+(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone)[ +]+(\d+)[_\.](\d+)(?:[_\.](\d+)|).*Outlook-iOS-Android
+(LG Player|Doppler|FancyMusic|MediaMonkey|Clementine) (\d+)\.(\d+)\.?([^.\s]+|)\.?([^.\s]+|)
+(MSIE) (\d+)\.(\d+)([a-z]\d|[a-z]|);.* MSIECrawler
+(Obigo|OBIGO)[^\d]*(\d+)(?:.(\d+)|)
+([ \t]*)\S(?:,[^,\r\n]+|[^,\r\n]*)(?:,[^,\r\n]+)*(?:,(?:\r?\n|\r)\1[ \t]+\S(?:,[^,\r\n]+|[^,\r\n]*)(?:,[^,\r\n]+)*)*
+(\.\w+\b)(\s*=\s*)([^;\s]*)(\s*;)
+(\s*)(?:(\S+)(\s*)(=)(\s*))?(.+)(\()(.*)(\))(\s*)
+(\s*)(?:\+[=-]+)+\+(?:\r?\n|\r)(?:\1[+|].+[+|](?:\r?\n|\r))+\1(?:\+[=-]+)+\+
+(\s*)=+ [ =]*=(?:(?:\r?\n|\r)\1.+)+(?:\r?\n|\r)\1=+ [ =]*=(?=(?:\r?\n|\r){2}|\s*$)
+(\{\s+)(\S+)(\s[^}]+\s\}\s)
+(iPod|iPod touch|iPhone|iPad);.*CPU.*OS[ +](\d+)_(\d+)(?:_(\d+)|).*Mobile
+(iPod|iPod touch|iPhone|iPad);.*CPU.*OS[ +](\d+)_(\d+)(?:_(\d+)|).*Mobile.*[ +]Safari
+(x86_64|aarch64)\ (\d+)\.(\d+)\.(\d+).*Chrome.*(?:CitrixChromeApp)$
+/^([`~]+|[^`~])(?: {2,}\n)|[\s\S]*?(?:(?=[\\\\<!\[`~]|\b_|https?://|ftp?://|www\.|$)|[^ ](?= {2,}\n))/
+; *(Advent |)(Vega(?:Bean|Comb|)).* Build
+Android Application[^\-]+ - (Sony) ?(Ericsson|) (.+) \w+ -
+[+-]?\d*\.\d+%?
+\$?\(\([\s\S]+?\)\)
+\$\{[^}]+\}
+\\\\[[^\\\\]]*?\\\\]\([^\)]*?\)|`[^`]*?`|<[^>]*?>
+\b0b[01]+\b|\b0x[\da-f]+\b|(?:\b\d+(?:_\d+)*\.?(?:\d+(?:_\d+)*)?|\B\.\d+)(?:e[+-]?\d+)?
+\w+\s+Mac OS X\s+\w+\s+(\d+).(\d+).(\d+).*
+^(Clementine)\S+ ([^.\s]+)\.([^.\s]+|)\.?([^.\s]+|)
