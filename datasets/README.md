@@ -40,7 +40,6 @@ Les résultats et analyses sont présentés dans l’essai:
 **“DETECTION ET CORRECTION AUTOMATISEES DES VULNERABILITES ReDoS: UNE APPROCHE EMPIRIQUE AU SERVICE DE LA CYBERSECURITE APPLIQUEE”**,  
 Ismaël-Yvann Mahassadi, Université du Québec en Outaouais, 2025.
 
-Lien : *(à insérer une fois le dépôt publié)*
 
 ---
 © 2025 — ReDoS Evaluation Pipeline | Research Project @ UQO
