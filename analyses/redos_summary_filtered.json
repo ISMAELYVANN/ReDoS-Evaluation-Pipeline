@@ -1,0 +1,4398 @@
+[
+  {
+    "cve_id": "CVE-2015-9239",
+    "description": [
+      "ansi2html is vulnerable to regular expression denial of service (ReDoS) when certain types of user input is passed in."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2016-10520",
+    "description": [
+      "jadedown is vulnerable to regular expression denial of service (ReDoS) when certain types of user input is passed in."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2016-10521",
+    "description": [
+      "jshamcrest is vulnerable to regular expression denial of service (ReDoS) when certain types of user input is passed in to the emailAddress validator."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2016-10527",
+    "description": [
+      "The riot-compiler version version 2.3.21 has an issue in a regex (Catastrophic Backtracking) thats make it unusable under certain conditions."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2016-10539",
+    "description": [
+      "negotiator is an HTTP content negotiator for Node.js and is used by many modules and frameworks including Express and Koa. The header for \"Accept-Language\", when parsed by negotiator 0.6.0 and earlier is vulnerable to Regular Expression Denial of Service via a specially crafted string."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2016-10540",
+    "description": [
+      "Minimatch is a minimal matching utility that works by converting glob expressions into JavaScript `RegExp` objects. The primary function, `minimatch(path, pattern)` in Minimatch 3.0.1 and earlier is vulnerable to ReDoS in the `pattern` parameter."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16021",
+    "description": [
+      "uri-js is a module that tries to fully implement RFC 3986. One of these features is validating whether or not a supplied URL is valid or not. To do this, uri-js uses a regular expression, This regular expression is vulnerable to redos. This causes the program to hang and the CPU to idle at 100% usage while uri-js is trying to validate if the supplied URL is valid or not. To check if you're vulnerable, look for a call to `require(\"uri-js\").parse()` where a user is able to send their own input. This affects uri-js 2.1.1 and earlier."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16086",
+    "description": [
+      "ua-parser is a port of Browserscope's user agent parser. ua-parser is vulnerable to a ReDoS (Regular Expression Denial of Service) attack when given a specially crafted UserAgent header."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16098",
+    "description": [
+      "charset 1.0.0 and below are vulnerable to regular expression denial of service. Input of around 50k characters is required for a slow down of around 2 seconds. Unless node was compiled using the -DHTTP_MAX_HEADER_SIZE= option the default header max length is 80kb, so the impact of the ReDoS is relatively low."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16099",
+    "description": [
+      "The no-case module is vulnerable to regular expression denial of service. When malicious untrusted user input is passed into no-case it can block the event loop causing a denial of service condition."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16111",
+    "description": [
+      "The content module is a module to parse HTTP Content-* headers. It is used by the hapijs framework to provide this functionality. The module is vulnerable to regular expression denial of service when passed a specifically crafted Content-Type or Content-Disposition header."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16113",
+    "description": [
+      "The parsejson module is vulnerable to regular expression denial of service when untrusted user input is passed into it to be parsed."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16114",
+    "description": [
+      "The marked module is vulnerable to a regular expression denial of service. Based on the information published in the public issue, 1k characters can block for around 6 seconds."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16115",
+    "description": [
+      "The timespan module is vulnerable to regular expression denial of service. Given 50k characters of untrusted user input it will block the event loop for around 10 seconds."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16116",
+    "description": [
+      "The string module is a module that provides extra string operations. The string module is vulnerable to regular expression denial of service when specifically crafted untrusted user input is passed into the underscore or unescapeHTML methods."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16117",
+    "description": [
+      "slug is a module to slugify strings, even if they contain unicode. slug is vulnerable to regular expression denial of service is specially crafted untrusted input is passed as input. About 50k characters can block the event loop for 2 seconds."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16118",
+    "description": [
+      "The forwarded module is used by the Express.js framework to handle the X-Forwarded-For header. It is vulnerable to a regular expression denial of service when it's passed specially crafted input to parse. This causes the event loop to be blocked causing a denial of service condition."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16119",
+    "description": [
+      "Fresh is a module used by the Express.js framework for HTTP response freshness testing. It is vulnerable to a regular expression denial of service when it is passed specially crafted input to parse. This causes the event loop to be blocked causing a denial of service condition."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16136",
+    "description": [
+      "method-override is a module used by the Express.js framework to let you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it. method-override is vulnerable to a regular expression denial of service vulnerability when specially crafted input is passed in to be parsed via the X-HTTP-Method-Override header."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-16137",
+    "description": [
+      "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2017-16138",
+    "description": [
+      "The mime module < 1.4.1, 2.0.1, 2.0.2 is vulnerable to regular expression denial of service when a mime lookup is performed on untrusted user input."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-18077",
+    "description": [
+      "index.js in brace-expansion before 1.1.7 is vulnerable to Regular Expression Denial of Service (ReDoS) attacks, as demonstrated by an expand argument containing many comma characters."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2017-18214",
+    "description": [
+      "The moment module before 2.19.3 for Node.js is prone to a regular expression denial of service via a crafted date string, a different vulnerability than CVE-2016-4055."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-1060",
+    "description": [
+      "python before versions 2.7.15, 3.4.9, 3.5.6rc1, 3.6.5rc1 and 3.7.0 is vulnerable to catastrophic backtracking in pop3lib's apop() method. An attacker could use this flaw to cause denial of service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-1061",
+    "description": [
+      "python before versions 2.7.15, 3.4.9, 3.5.6rc1, 3.6.5rc1 and 3.7.0 is vulnerable to catastrophic backtracking in the difflib.IS_LINE_JUNK method.  An attacker could use this flaw to cause denial of service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-1109",
+    "description": [
+      "A vulnerability was found in Braces versions prior to 2.3.1. Affected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) attacks."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2018-13863",
+    "description": [
+      "The MongoDB bson JavaScript module (also known as js-bson) versions 0.5.0 to 1.0.x before 1.0.5 is vulnerable to a Regular Expression Denial of Service (ReDoS) in lib/bson/decimal128.js. The flaw is triggered when the Decimal128.fromString() function is called to parse a long untrusted string."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-14733",
+    "description": [
+      "The Odoo Community Association (OCA) dbfilter_from_header module makes Odoo 8.x, 9.x, 10.x, and 11.x vulnerable to ReDoS (regular expression denial of service) under certain circumstances."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-20164",
+    "description": [
+      "An issue was discovered in regex.yaml (aka regexes.yaml) in UA-Parser UAP-Core before 0.6.0. A Regular Expression Denial of Service (ReDoS) issue allows remote attackers to overload a server by setting the User-Agent header in an HTTP(S) request to a value containing a long digit string. (The UAP-Core project contains the vulnerability, propagating to all implementations.)"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2018-20801",
+    "description": [
+      "In js/parts/SvgRenderer.js in Highcharts JS before 6.1.0, the use of backtracking regular expressions permitted an attacker to conduct a denial of service attack against the SVGRenderer component, aka ReDoS."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-3737",
+    "description": [
+      "sshpk is vulnerable to ReDoS when parsing crafted invalid public keys."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-3738",
+    "description": [
+      "protobufjs is vulnerable to ReDoS when parsing crafted invalid .proto files."
+    ],
+    "attackVector": "LOCAL",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 5.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 1.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-6519",
+    "description": [
+      "The SAML2 library before 1.10.4, 2.x before 2.3.5, and 3.x before 3.1.1 in SimpleSAMLphp has a Regular Expression Denial of Service vulnerability for fraction-of-seconds data in a timestamp."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-7158",
+    "description": [
+      "The `'path'` module in the Node.js 4.x release line contains a potential regular expression denial of service (ReDoS) vector. The code in question was replaced in Node.js 6.x and later so this vulnerability only impacts all versions of Node.js 4.x. The regular expression, `splitPathRe`, used within the `'path'` module for the various path parsing functions, including `path.dirname()`, `path.extname()` and `path.parse()` was structured in such a way as to allow an attacker to craft a string, that when passed through one of these functions, could take a significant amount of time to evaluate, potentially leading to a full denial of service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-7536",
+    "description": [
+      "An issue was discovered in Django 2.0 before 2.0.3, 1.11 before 1.11.11, and 1.8 before 1.8.19. The django.utils.html.urlize() function was extremely slow to evaluate certain inputs due to catastrophic backtracking vulnerabilities in two regular expressions (only one regular expression for Django 1.8.x). The urlize() function is used to implement the urlize and urlizetrunc template filters, which were thus vulnerable."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2018-7537",
+    "description": [
+      "An issue was discovered in Django 2.0 before 2.0.3, 1.11 before 1.11.11, and 1.8 before 1.8.19. If django.utils.text.Truncator's chars() and words() methods were passed the html=True argument, they were extremely slow to evaluate certain inputs due to a catastrophic backtracking vulnerability in a regular expression. The chars() and words() methods are used to implement the truncatechars_html and truncatewords_html template filters, which were thus vulnerable."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2018-7560",
+    "description": [
+      "index.js in the Anton Myshenin aws-lambda-multipart-parser NPM package before 0.1.2 has a Regular Expression Denial of Service (ReDoS) issue via a crafted multipart/form-data boundary string."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2018-7651",
+    "description": [
+      "index.js in the ssri module before 5.2.2 for Node.js is prone to a regular expression denial of service vulnerability in strict mode functionality via a long base64 hash string."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "HIGH",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.9,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.2,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2019-11387",
+    "description": [
+      "An issue was discovered in OWASP ModSecurity Core Rule Set (CRS) through 3.1.0. /rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf allows remote attackers to cause a denial of service (ReDOS) by entering a specially crafted string with nested repetition operators."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2019-11388",
+    "description": [
+      "An issue was discovered in OWASP ModSecurity Core Rule Set (CRS) through 3.1.0. /rules/REQUEST-932-APPLICATION-ATTACK-RCE.conf allows remote attackers to cause a denial of service (ReDOS) by entering a specially crafted string with nested repetition operators. NOTE: the software maintainer disputes that this is a vulnerability because the issue cannot be exploited via ModSecurity"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2019-11389",
+    "description": [
+      "An issue was discovered in OWASP ModSecurity Core Rule Set (CRS) through 3.1.0. /rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf allows remote attackers to cause a denial of service (ReDOS) by entering a specially crafted string with next# at the beginning and nested repetition operators. NOTE: the software maintainer disputes that this is a vulnerability because the issue cannot be exploited via ModSecurity"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2019-11390",
+    "description": [
+      "An issue was discovered in OWASP ModSecurity Core Rule Set (CRS) through 3.1.0. /rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf allows remote attackers to cause a denial of service (ReDOS) by entering a specially crafted string with set_error_handler# at the beginning and nested repetition operators. NOTE: the software maintainer disputes that this is a vulnerability because the issue cannot be exploited via ModSecurity"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2019-11391",
+    "description": [
+      "An issue was discovered in OWASP ModSecurity Core Rule Set (CRS) through 3.1.0. /rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf allows remote attackers to cause a denial of service (ReDOS) by entering a specially crafted string with $a# at the beginning and nested repetition operators. NOTE: the software maintainer disputes that this is a vulnerability because the issue cannot be exploited via ModSecurity"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2019-12041",
+    "description": [
+      "lib/common/html_re.js in remarkable 1.7.1 allows Regular Expression Denial of Service (ReDoS) via a CDATA section."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2019-14232",
+    "description": [
+      "An issue was discovered in Django 1.11.x before 1.11.23, 2.1.x before 2.1.11, and 2.2.x before 2.2.4. If django.utils.text.Truncator's chars() and words() methods were passed the html=True argument, they were extremely slow to evaluate certain inputs due to a catastrophic backtracking vulnerability in a regular expression. The chars() and words() methods are used to implement the truncatechars_html and truncatewords_html template filters, which were thus vulnerable."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2019-16201",
+    "description": [
+      "WEBrick::HTTPAuth::DigestAuth in Ruby through 2.4.7, 2.5.x through 2.5.6, and 2.6.x through 2.6.4 has a regular expression Denial of Service cause by looping/backtracking. A victim must expose a WEBrick server that uses DigestAuth to the Internet or a untrusted network."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2019-17592",
+    "description": [
+      "The csv-parse module before 4.4.6 for Node.js is vulnerable to Regular Expression Denial of Service. The __isInt() function contains a malformed regular expression that processes large crafted input very slowly. This is triggered when using the cast option."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2019-20871",
+    "description": [
+      "An issue was discovered in Mattermost Server before 5.9.0, 5.8.1, 5.7.3, and 4.10.8. The Markdown library allows catastrophic backtracking."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2019-20922",
+    "description": [
+      "Handlebars before 4.4.5 allows Regular Expression Denial of Service (ReDoS) because of eager matching. The parser may be forced into an endless loop while processing crafted templates. This may allow attackers to exhaust system resources."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2019-6986",
+    "description": [
+      "SPARQL Injection in VIVO Vitro v1.10.0 allows a remote attacker to execute arbitrary SPARQL via the uri parameter, leading to a regular expression denial of service (ReDoS), as demonstrated by crafted use of FILTER%20regex in a /individual?uri= request."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-13349",
+    "description": [
+      "An issue has been discovered in GitLab EE affecting all versions starting from 8.12. A regular expression related to a file path resulted in the Advanced Search feature susceptible to catastrophic backtracking. Affected versions are >=8.12, <13.3.9,>=13.4, <13.4.5,>=13.5, <13.5.2."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 4.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2020-14190",
+    "description": [
+      "Affected versions of Atlassian Fisheye/Crucible allow remote attackers to achieve Regex Denial of Service via user-supplied regex in EyeQL. The affected versions are before version 4.8.4."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-1920",
+    "description": [
+      "A regular expression denial of service (ReDoS) vulnerability in the validateBaseUrl function can cause the application to use excessive resources, become unresponsive, or crash. This was introduced in react-native version 0.59.0 and fixed in version 0.64.1."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-23469",
+    "description": [
+      "gmate v0.12+bionic contains a regular expression denial of service (ReDoS) vulnerability in the gedit3 plugin."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-23478",
+    "description": [
+      "Leo Editor v6.2.1 was discovered to contain a regular expression denial of service (ReDoS) vulnerability in the component plugins/importers/dart.py."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-26256",
+    "description": [
+      "Fast-csv is an npm package for parsing and formatting CSVs or any other delimited value file in node. In fast-cvs before version 4.3.6 there is a possible ReDoS vulnerability (Regular Expression Denial of Service) when using ignoreEmpty option when parsing. This has been patched in `v4.3.6` You will only be affected by this if you use the `ignoreEmpty` parsing option. If you do use this option it is recommended that you upgrade to the latest version `v4.3.6` This vulnerability was found using a CodeQL query which identified `EMPTY_ROW_REGEXP` regular expression as vulnerable."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-26302",
+    "description": [
+      "is.js is a general-purpose check library. Versions 0.9.0 and prior contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). is.js uses a regex copy-pasted from a gist to validate URLs. Trying to validate a malicious string can cause the regex to loop “forever.\" This vulnerability was found using a CodeQL query which identifies inefficient regular expressions. is.js has no patch for this issue."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-26303",
+    "description": [
+      "insane is a whitelist-oriented HTML sanitizer. Versions 2.6.2 and prior contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, no known patches are available."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-26304",
+    "description": [
+      "Foundation is a front-end framework. Versions 6.3.3 and prior contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, it is unknown if any fixes are available."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-26305",
+    "description": [
+      "CommonRegexJS is a CommonRegex port for JavaScript. All available versions contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, no known patches are available."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-26306",
+    "description": [
+      "Knwl.js is a Javascript library that parses through text for dates, times, phone numbers, emails, places, and more. Versions 1.0.2 and prior contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, no known patches are available."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2020-26307",
+    "description": [
+      "HTML2Markdown is a Javascript implementation for converting HTML to Markdown text. All available versions contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, no known patches are available."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2020-26308",
+    "description": [
+      "Validate.js provides a declarative way of validating javascript objects. Versions 0.13.1 and prior contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, no known patches are available."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2020-26309",
+    "description": [
+      "Validate.js provides a declarative way of validating javascript objects. Versions 0.11.3 and prior contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, it is unknown if any patches are available."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2020-26310",
+    "description": [
+      "Validate.js provides a declarative way of validating javascript objects. All versions as of 30 November 2020 contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, it is unknown if any patches are available."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2020-26311",
+    "description": [
+      "Useragent is a user agent parser for Node.js. All versions as of time of publication contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS). As of time of publication, no patches are available."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-27511",
+    "description": [
+      "An issue was discovered in the stripTags and unescapeHTML components in Prototype 1.7.3 where an attacker can cause a Regular Expression Denial of Service (ReDOS) through stripping crafted HTML tags."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-28493",
+    "description": [
+      "This affects the package jinja2 from 0.0.0 and before 2.11.3. The ReDoS vulnerability is mainly due to the `_punctuation_re regex` operator and its use of multiple wildcards. The last wildcard is the most exploitable as it searches for trailing punctuation. This issue can be mitigated by Markdown to format user content instead of the urlize filter, or by implementing request timeouts and limiting process memory."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2020-28500",
+    "description": [
+      "Lodash versions prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the toNumber, trim and trimEnd functions."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2020-5243",
+    "description": [
+      "uap-core before 0.7.3 is vulnerable to a denial of service attack when processing crafted User-Agent strings. Some regexes are vulnerable to regular expression denial of service (REDoS) due to overlapping capture groups. This allows remote attackers to overload a server by setting the User-Agent header in an HTTP(S) request to maliciously crafted long strings. This has been patched in uap-core 0.7.3."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-6817",
+    "description": [
+      "bleach.clean behavior parsing style attributes could result in a regular expression denial of service (ReDoS). Calls to bleach.clean with an allowed tag with an allowed style attribute are vulnerable to ReDoS. For example, bleach.clean(..., attributes={'a': ['style']})."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7661",
+    "description": [
+      "all versions of url-regex are vulnerable to Regular Expression Denial of Service. An attacker providing a very long string in String.test can cause a Denial of Service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7662",
+    "description": [
+      "websocket-extensions npm module prior to 0.1.4 allows Denial of Service (DoS) via Regex Backtracking. The extension parser may take quadratic time when parsing a header containing an unclosed string parameter value whose content is a repeating two-byte sequence of a backslash and some other character. This could be abused by an attacker to conduct Regex Denial Of Service (ReDoS) on a single-threaded server by providing a malicious payload with the Sec-WebSocket-Extensions header."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7663",
+    "description": [
+      "websocket-extensions ruby module prior to 0.1.5 allows Denial of Service (DoS) via Regex Backtracking. The extension parser may take quadratic time when parsing a header containing an unclosed string parameter value whose content is a repeating two-byte sequence of a backslash and some other character. This could be abused by an attacker to conduct Regex Denial Of Service (ReDoS) on a single-threaded server by providing a malicious payload with the Sec-WebSocket-Extensions header."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7733",
+    "description": [
+      "The package ua-parser-js before 0.7.22 are vulnerable to Regular Expression Denial of Service (ReDoS) via the regex for Redmi Phones and Mi Pad Tablets UA."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7753",
+    "description": [
+      "All versions of package trim are vulnerable to Regular Expression Denial of Service (ReDoS) via trim()."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7755",
+    "description": [
+      "All versions of package dat.gui are vulnerable to Regular Expression Denial of Service (ReDoS) via specifically crafted rgb and rgba values."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7760",
+    "description": [
+      "This affects the package codemirror before 5.58.2; the package org.apache.marmotta.webjars:codemirror before 5.58.2. The vulnerable regular expression is located in https://github.com/codemirror/CodeMirror/blob/cdb228ac736369c685865b122b736cd0d397836c/mode/javascript/javascript.jsL129. The ReDOS vulnerability of the regex is mainly due to the sub-pattern (s|/*.*?*/)*"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7767",
+    "description": [
+      "All versions of package express-validators are vulnerable to Regular Expression Denial of Service (ReDoS) when validating specifically-crafted invalid urls."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2020-7779",
+    "description": [
+      "All versions of package djvalidator are vulnerable to Regular Expression Denial of Service (ReDoS) by sending crafted invalid emails - for example, --@------------------------------------------------------------------------------------------------------------------------!."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-7793",
+    "description": [
+      "The package ua-parser-js before 0.7.23 are vulnerable to Regular Expression Denial of Service (ReDoS) in multiple regexes (see linked commit for more info)."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2020-8492",
+    "description": [
+      "Python 2.7 through 2.7.17, 3.5 through 3.5.9, 3.6 through 3.6.10, 3.7 through 3.7.6, and 3.8 through 3.8.1 allows an HTTP server to conduct Regular Expression Denial of Service (ReDoS) attacks against a client because of urllib.request.AbstractBasicAuthHandler catastrophic backtracking."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-21236",
+    "description": [
+      "CairoSVG is a Python (pypi) package. CairoSVG is an SVG converter based on Cairo. In CairoSVG before version 2.5.1, there is a regular expression denial of service (REDoS) vulnerability. When processing SVG files, the python package CairoSVG uses two regular expressions which are vulnerable to Regular Expression Denial of Service (REDoS). If an attacker provides a malicious SVG, it can make cairosvg get stuck processing the file for a very long time. This is fixed in version 2.5.1. See Referenced GitHub advisory for more information."
+    ],
+    "attackVector": "LOCAL",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 5.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 1.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-21252",
+    "description": [
+      "The jQuery Validation Plugin provides drop-in validation for your existing forms. It is published as an npm package \"jquery-validation\". jquery-validation before version 1.19.3 contains one or more regular expressions that are vulnerable to ReDoS (Regular Expression Denial of Service). This is fixed in 1.19.3."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-21254",
+    "description": [
+      "CKEditor 5 is an open source rich text editor framework with a modular architecture. The CKEditor 5 Markdown plugin (@ckeditor/ckeditor5-markdown-gfm) before version 25.0.0 has a regex denial of service (ReDoS) vulnerability. The vulnerability allowed to abuse link recognition regular expression, which could cause a significant performance drop resulting in browser tab freeze. It affects all users using CKEditor 5 Markdown plugin at version <= 24.0.0. The problem has been recognized and patched. The fix will be available in version 25.0.0."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-21267",
+    "description": [
+      "Schema-Inspector is an open-source tool to sanitize and validate JS objects (npm package schema-inspector). In before version 2.0.0, email address validation is vulnerable to a denial-of-service attack where some input (for example `a@0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.`) will freeze the program or web browser page executing the code. This affects any current schema-inspector users using any version to validate email addresses. Users who do not do email validation, and instead do other types of validation (like string min or max length, etc), are not affected. Users should upgrade to version 2.0.0, which uses a regex expression that isn't vulnerable to ReDoS."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-21306",
+    "description": [
+      "Marked is an open-source markdown parser and compiler (npm package \"marked\"). In marked from version 1.1.1 and before version 2.0.0, there is a Regular expression Denial of Service vulnerability. This vulnerability can affect anyone who runs user generated code through marked. This vulnerability is fixed in version 2.0.0."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-21317",
+    "description": [
+      "uap-core in an open-source npm package which contains the core of BrowserScope's original user agent string parser. In uap-core before version 0.11.0, some regexes are vulnerable to regular expression denial of service (REDoS) due to overlapping capture groups. This allows remote attackers to overload a server by setting the User-Agent header in an HTTP(S) request to maliciously crafted long strings. This is fixed in version 0.11.0. Downstream packages such as uap-python, uap-ruby etc which depend upon uap-core follow different version schemes."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2021-21391",
+    "description": [
+      "CKEditor 5 provides a WYSIWYG editing solution. This CVE affects the following npm packages: ckeditor5-engine, ckeditor5-font, ckeditor5-image, ckeditor5-list, ckeditor5-markdown-gfm, ckeditor5-media-embed, ckeditor5-paste-from-office, and ckeditor5-widget. Following an internal audit, a regular expression denial of service (ReDoS) vulnerability has been discovered in multiple CKEditor 5 packages. The vulnerability allowed to abuse particular regular expressions, which could cause a significant performance drop resulting in a browser tab freeze. It affects all users using the CKEditor 5 packages listed above at version <= 26.0.0. The problem has been recognized and patched. The fix will be available in version 27.0.0."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-22168",
+    "description": [
+      "A regular expression denial of service issue has been discovered in NuGet API affecting all versions of GitLab starting from version 12.8."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-22880",
+    "description": [
+      "The PostgreSQL adapter in Active Record before 6.1.2.1, 6.0.3.5, 5.2.4.5 suffers from a regular expression denial of service (REDoS) vulnerability. Carefully crafted input can cause the input validation in the `money` type of the PostgreSQL adapter in Active Record to spend too much time in a regular expression, resulting in the potential for a DoS attack. This only impacts Rails applications that are using PostgreSQL along with money type columns that take user input."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-22902",
+    "description": [
+      "The actionpack ruby gem (a framework for handling and responding to web requests in Rails) before 6.0.3.7, 6.1.3.2 suffers from a possible denial of service vulnerability in the Mime type parser of Action Dispatch. Carefully crafted Accept headers can cause the mime type parser in Action Dispatch to do catastrophic backtracking in the regular expression engine."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23341",
+    "description": [
+      "The package prismjs before 1.23.0 are vulnerable to Regular Expression Denial of Service (ReDoS) via the prism-asciidoc, prism-rest, prism-tap and prism-eiffel components."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23343",
+    "description": [
+      "All versions of package path-parse are vulnerable to Regular Expression Denial of Service (ReDoS) via splitDeviceRe, splitTailRe, and splitPathRe regular expressions. ReDoS exhibits polynomial worst-case time complexity."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23353",
+    "description": [
+      "This affects the package jspdf before 2.3.1. ReDoS is possible via the addImage function."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23354",
+    "description": [
+      "The package printf before 0.6.1 are vulnerable to Regular Expression Denial of Service (ReDoS) via the regex string /\\%(?:\\(([\\w_.]+)\\)|([1-9]\\d*)\\$)?([0 +\\-\\]*)(\\*|\\d+)?(\\.)?(\\*|\\d+)?[hlL]?([\\%bscdeEfFgGioOuxX])/g in lib/printf.js. The vulnerable regular expression has cubic worst-case time complexity."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23362",
+    "description": [
+      "The package hosted-git-info before 3.0.8 are vulnerable to Regular Expression Denial of Service (ReDoS) via regular expression shortcutMatch in the fromUrl function in index.js. The affected regular expression exhibits polynomial worst-case time complexity."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2021-23364",
+    "description": [
+      "The package browserslist from 4.0.0 and before 4.16.5 are vulnerable to Regular Expression Denial of Service (ReDoS) during parsing of queries."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2021-23368",
+    "description": [
+      "The package postcss from 7.0.0 and before 8.2.10 are vulnerable to Regular Expression Denial of Service (ReDoS) during source map parsing."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2021-23382",
+    "description": [
+      "The package postcss before 8.2.13 are vulnerable to Regular Expression Denial of Service (ReDoS) via getAnnotationURL() and loadAnnotation() in lib/previous-map.js. The vulnerable regexes are caused mainly by the sub-pattern \\/\\*\\s* sourceMappingURL=(.*)."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23388",
+    "description": [
+      "The package forms before 1.2.1, from 1.3.0 and before 1.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via email validation."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2021-23392",
+    "description": [
+      "The package locutus before 2.0.15 are vulnerable to Regular Expression Denial of Service (ReDoS) via the gopher_parsedir function."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23425",
+    "description": [
+      "All versions of package trim-off-newlines are vulnerable to Regular Expression Denial of Service (ReDoS) via string processing."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2021-23437",
+    "description": [
+      "The package pillow 5.2.0 and before 8.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the getrgb function."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23446",
+    "description": [
+      "The package handsontable before 10.0.0; the package handsontable from 0 and before 10.0.0 are vulnerable to Regular Expression Denial of Service (ReDoS) in Handsontable.helper.isNumeric function."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-23490",
+    "description": [
+      "The package parse-link-header before 2.0.0 are vulnerable to Regular Expression Denial of Service (ReDoS) via the checkHeader function."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-25292",
+    "description": [
+      "An issue was discovered in Pillow before 8.1.1. The PDF parser allows a regular expression DoS (ReDoS) attack via a crafted PDF file because of a catastrophic backtracking regex."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-26271",
+    "description": [
+      "It was possible to execute a ReDoS-type attack inside CKEditor 4 before 4.16 by persuading a victim to paste crafted text into the Styles input of specific dialogs (in the Advanced Tab for Dialogs plugin)."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-26272",
+    "description": [
+      "It was possible to execute a ReDoS-type attack inside CKEditor 4 before 4.16 by persuading a victim to paste crafted URL-like text into the editor, and then press Enter or Space (in the Autolink plugin)."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-26813",
+    "description": [
+      "markdown2 >=1.0.1.18, fixed in 2.4.0, is affected by a regular expression denial of service vulnerability. If an attacker provides a malicious string, it can make markdown2 processing difficult or delayed for an extended period of time."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-27291",
+    "description": [
+      "In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions. Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS. By crafting malicious input, an attacker can cause a denial of service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-27293",
+    "description": [
+      "RestSharp < 106.11.8-alpha.0.13 uses a regular expression which is vulnerable to Regular Expression Denial of Service (ReDoS) when converting strings into DateTimes. If a server responds with a malicious string, the client using RestSharp will be stuck processing it for an exceedingly long time. Thus the remote server can trigger Denial of Service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-27405",
+    "description": [
+      "A ReDoS (regular expression denial of service) flaw was found in the @progfay/scrapbox-parser package before 6.0.3 for Node.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-28092",
+    "description": [
+      "The is-svg package 2.1.0 through 4.2.1 for Node.js uses a regular expression that is vulnerable to Regular Expression Denial of Service (ReDoS). If an attacker provides a malicious string, is-svg will get stuck processing the input for a very long time."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-29059",
+    "description": [
+      "A vulnerability was discovered in IS-SVG version 2.1.0 to 4.2.2 and below where a Regular Expression Denial of Service (ReDOS) occurs if the application is provided and checks a crafted invalid SVG string."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-29060",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in Color-String version 1.5.5 and below which occurs when the application is provided and checks a crafted invalid HWB string."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2021-29061",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in Vfsjfilechooser2 version 0.2.9 and below which occurs when the application attempts to validate crafted URIs."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-29063",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in Mpmath v1.0.0 through v1.2.1 when the mpmathify function is called."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-32723",
+    "description": [
+      "Prism is a syntax highlighting library. Some languages before 1.24.0 are vulnerable to Regular Expression Denial of Service (ReDoS). When Prism is used to highlight untrusted (user-given) text, an attacker can craft a string that will take a very very long time to highlight. This problem has been fixed in Prism v1.24. As a workaround, do not use ASCIIDoc or ERB to highlight untrusted text. Other languages are not affected and can be used to highlight untrusted text."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-32740",
+    "description": [
+      "Addressable is an alternative implementation to the URI implementation that is part of Ruby's standard library. An uncontrolled resource consumption vulnerability exists after version 2.3.0 through version 2.7.0. Within the URI template implementation in Addressable, a maliciously crafted template may result in uncontrolled resource consumption, leading to denial of service when matched against a URI. In typical usage, templates would not normally be read from untrusted user input, but nonetheless, no previous security advisory for Addressable has cautioned against doing this. Users of the parsing capabilities in Addressable but not the URI template capabilities are unaffected. The vulnerability is patched in version 2.8.0. As a workaround, only create Template objects from trusted sources that have been validated not to produce catastrophic backtracking."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-32763",
+    "description": [
+      "OpenProject is open-source, web-based project management software. In versions prior to 11.3.3, the `MessagesController` class of OpenProject has a `quote` method that implements the logic behind the Quote button in the discussion forums, and it uses a regex to strip `<pre>` tags from the message being quoted. The `(.|\\s)` part can match a space character in two ways, so an unterminated `<pre>` tag containing `n` spaces causes Ruby's regex engine to backtrack to try 2<sup>n</sup> states in the NFA. This will result in a Regular Expression Denial of Service. The issue is fixed in OpenProject 11.3.3. As a workaround, one may install the patch manually."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-32821",
+    "description": [
+      "MooTools is a collection of JavaScript utilities for JavaScript developers. All known versions include a CSS selector parser that is vulnerable to Regular Expression Denial of Service (ReDoS). An attack requires that an attacker can inject a string into a CSS selector at runtime, which is quite common with e.g. jQuery CSS selectors. No patches are available for this issue."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-32837",
+    "description": [
+      "mechanize, a library for automatically interacting with HTTP web servers, contains a regular expression that is vulnerable to regular expression denial of service (ReDoS) prior to version 0.4.6. If a web server responds in a malicious way, then mechanize could crash. Version 0.4.6 has a patch for the issue."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-32838",
+    "description": [
+      "Flask-RESTX (pypi package flask-restx) is a community driven fork of Flask-RESTPlus. Flask-RESTX before version 0.5.1 is vulnerable to ReDoS (Regular Expression Denial of Service) in email_regex. This is fixed in version 0.5.1."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2021-32839",
+    "description": [
+      "sqlparse is a non-validating SQL parser module for Python. In sqlparse versions 0.4.0 and 0.4.1 there is a regular Expression Denial of Service in sqlparse vulnerability. The regular expression may cause exponential backtracking on strings containing many repetitions of '\\r\\n' in SQL comments. Only the formatting feature that removes comments from SQL statements is affected by this regular expression. As a workaround don't use the sqlformat.format function with keyword strip_comments=True or the --strip-comments command line flag when using the sqlformat command line tool. The issues has been fixed in sqlparse 0.4.2."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2021-32848",
+    "description": [
+      "Octobox is software for managing GitHub notifications. Prior to pull request (PR) 2807, a user of the system can provide a specifically crafted search query string that will trigger a ReDoS vulnerability. This issue is fixed in PR 2807."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-33502",
+    "description": [
+      "The normalize-url package before 4.5.1, 5.x before 5.3.1, and 6.x before 6.0.1 for Node.js has a ReDoS (regular expression denial of service) issue because it has exponential performance for data: URLs."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-33503",
+    "description": [
+      "An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component, the authority regular expression exhibits catastrophic backtracking, causing a denial of service if a URL were passed as a parameter or redirected to via an HTTP redirect."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-33580",
+    "description": [
+      "User controlled `request.getHeader(\"Referer\")`, `request.getRequestURL()` and `request.getQueryString()` are used to build and run a regex expression. The attacker doesn't have to use a browser and may send a specially crafted Referer header programmatically. Since the attacker controls the string and the regex pattern he may cause a ReDoS by regex catastrophic backtracking on the server side. This problem has been fixed in Roller 6.0.2."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-33623",
+    "description": [
+      "The trim-newlines package before 3.0.1 and 4.x before 4.0.1 for Node.js has an issue related to regular expression denial-of-service (ReDoS) for the .end() method."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-35065",
+    "description": [
+      "The glob-parent package before 6.0.1 for Node.js allows ReDoS (regular expression denial of service) attacks against the enclosure regular expression."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-36716",
+    "description": [
+      "A ReDoS (regular expression denial of service) flaw was found in the Segment is-email package before 1.0.1 for Node.js. An attacker that is able to provide crafted input to the isEmail(input) function may cause an application to consume an excessive amount of CPU."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-3733",
+    "description": [
+      "There's a flaw in urllib's AbstractBasicAuthHandler class. An attacker who controls a malicious HTTP server that an HTTP client (such as web browser) connects to, could trigger a Regular Expression Denial of Service (ReDOS) during an authentication request with a specially crafted payload that is sent by the server to the client. The greatest threat that this flaw poses is to application availability."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-38244",
+    "description": [
+      "A regular expression denial of service (ReDoS) vulnerability exits in cbioportal 3.6.21 and older via a POST request to /ProteinArraySignificanceTest.json."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-39914",
+    "description": [
+      "A regular expression denial of service issue in GitLab versions 8.13 to 14.2.5, 14.3.0 to 14.3.3 and 14.4.0 could cause excessive usage of resources when a specially crafted username was used when provisioning a new user"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 4.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2021-39917",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 12.9 before 14.3.6, all versions starting from 14.4 before 14.4.4, all versions starting from 14.5 before 14.5.2. A regular expression related to quick actions features was susceptible to catastrophic backtracking that could cause a DOS attack."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-39933",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 12.10 before 14.3.6, all versions starting from 14.4 before 14.4.4, all versions starting from 14.5 before 14.5.2. A regular expression used for handling user input (notes, comments, etc) was susceptible to catastrophic backtracking that could cause a DOS attack."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-39940",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 13.2 before 14.3.6, all versions starting from 14.4 before 14.4.4, all versions starting from 14.5 before 14.5.2. GitLab Maven Package registry is vulnerable to a regular expression denial of service when a specifically crafted string is sent."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40660",
+    "description": [
+      "An issue was discovered in Delight Nashorn Sandbox 0.2.0. There is an ReDoS vulnerability that can be exploited to launching a denial of service (DoS) attack."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40892",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in validate-color v2.1.0 when handling crafted invalid rgb(a) strings."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40893",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in validate-data v0.1.1 when validating crafted invalid emails."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40894",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in underscore-99xp v1.7.2 when the deepValueSearch function is called."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40895",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in todo-regex v0.1.1 when matching crafted invalid TODO statements."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40896",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in that-value v0.1.3 when validating crafted invalid emails."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40897",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in split-html-to-chars v1.0.5 when splitting crafted invalid htmls."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40898",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in scaffold-helper v1.2.0 when copying crafted invalid files."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40899",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in repo-git-downloader v0.1.1 when downloading crafted invalid git repositories."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40900",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in regexfn v1.0.5 when validating crafted invalid emails."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-40901",
+    "description": [
+      "A Regular Expression Denial of Service (ReDOS) vulnerability was discovered in scniro-validator v1.0.1 when validating crafted invalid emails."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-41115",
+    "description": [
+      "Zulip is an open source team chat server. In affected versions Zulip allows organization administrators on a server to configure \"linkifiers\" that automatically create links from messages that users send, detected via arbitrary regular expressions. Malicious organization administrators could subject the server to a denial-of-service via regular expression complexity attacks; most simply, by configuring a quadratic-time regular expression in a linkifier, and sending messages that exploited it. A regular expression attempted to parse the user-provided regexes to verify that they were safe from ReDoS -- this was both insufficient, as well as _itself_ subject to ReDoS if the organization administrator entered a sufficiently complex invalid regex. Affected users should [upgrade to the just-released Zulip 4.7](https://zulip.readthedocs.io/en/latest/production/upgrade-or-modify.html#upgrading-to-a-release), or [`main`](https://zulip.readthedocs.io/en/latest/production/upgrade-or-modify.html#upgrading-from-a-git-repository)."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-41118",
+    "description": [
+      "The DynamicPageList3 extension is a reporting tool for MediaWiki, listing category members and intersections with various formats and details. In affected versions unsanitised input of regular expression date within the parameters of the DPL parser function, allowed for the possibility of ReDoS (Regex Denial of Service). This has been resolved in version 3.3.6. If you are unable to update you may also set `$wgDplSettings['functionalRichness'] = 0;` or disable DynamicPageList3 to mitigate."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-41186",
+    "description": [
+      "Fluentd collects events from various data sources and writes them to files to help unify logging infrastructure. The parser_apache2 plugin in Fluentd v0.14.14 to v1.14.1 suffers from a regular expression denial of service (ReDoS) vulnerability. A broken apache log with a certain pattern of string can spend too much time in a regular expression, resulting in the potential for a DoS attack. This issue is patched in version 1.14.2 There are two workarounds available. Either don't use parser_apache2 for parsing logs (which cannot guarantee generated by Apache), or put patched version of parser_apache2.rb into /etc/fluent/plugin directory (or any other directories specified by the environment variable `FLUENT_PLUGIN` or `--plugin` option of fluentd)."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-41817",
+    "description": [
+      "Date.parse in the date gem through 3.2.0 for Ruby allows ReDoS (regular expression Denial of Service) via a long string. The fixed versions are 3.2.1, 3.1.2, 3.0.2, and 2.0.1."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-42836",
+    "description": [
+      "GJSON before 1.9.3 allows a ReDoS (regular expression denial of service) attack."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-43306",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the jquery-validation npm package, when an attacker is able to supply arbitrary input to the url2 method"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-43307",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the semver-regex npm package, when an attacker is able to supply arbitrary input to the test() method"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-43308",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the markdown-link-extractor npm package, when an attacker is able to supply arbitrary input to the module's exported function"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-43309",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the uri-template-lite npm package, when an attacker is able to supply arbitrary input to the \"URI.expand\" method"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-43838",
+    "description": [
+      "jsx-slack is a library for building JSON objects for Slack Block Kit surfaces from JSX. In versions prior to 4.5.1 users are vulnerable to a regular expression denial-of-service (ReDoS) attack. If attacker can put a lot of JSX elements into `<blockquote>` tag, an internal regular expression for escaping characters may consume an excessive amount of computing resources. jsx-slack v4.5.1 has patched to a regex for escaping blockquote characters. Users are advised to upgrade as soon as possible."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-43843",
+    "description": [
+      "jsx-slack is a package for building JSON objects for Slack block kit surfaces from JSX. The maintainers found the patch for CVE-2021-43838 in jsx-slack v4.5.1 is insufficient tfor protection from a Regular Expression Denial of Service (ReDoS) attack. If an attacker can put a lot of JSX elements into `<blockquote>` tag _with including multibyte characters_, an internal regular expression for escaping characters may consume an excessive amount of computing resources. v4.5.1 passes the test against ASCII characters but misses the case of multibyte characters. jsx-slack v4.5.2 has updated regular expressions for escaping blockquote characters to prevent catastrophic backtracking. It is also including an updated test case to confirm rendering multiple tags in `<blockquote>` with multibyte characters."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-43854",
+    "description": [
+      "NLTK (Natural Language Toolkit) is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing. Versions prior to 3.6.5 are vulnerable to regular expression denial of service (ReDoS) attacks. The vulnerability is present in PunktSentenceTokenizer, sent_tokenize and word_tokenize. Any users of this class, or these two functions, are vulnerable to the ReDoS attack. In short, a specifically crafted long input to any of these vulnerable functions will cause them to take a significant amount of execution time. If your program relies on any of the vulnerable functions for tokenizing unpredictable user input, then we would strongly recommend upgrading to a version of NLTK without the vulnerability. For users unable to upgrade the execution time can be bounded by limiting the maximum length of an input to any of the vulnerable functions. Our recommendation is to implement such a limit."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2021-44686",
+    "description": [
+      "calibre before 5.32.0 contains a regular expression that is vulnerable to ReDoS (Regular Expression Denial of Service) in html_preprocess_rules in ebooks/conversion/preprocess.py."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-45470",
+    "description": [
+      "lib/DatabaseLayer.py in cve-search before 4.1.0 allows regular expression injection, which can lead to ReDoS (regular expression denial of service) or other impacts."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2021-46823",
+    "description": [
+      "python-ldap before 3.4.0 is vulnerable to a denial of service when ldap.schema is used for untrusted schema definitions, because of a regular expression denial of service (ReDoS) flaw in the LDAP schema parser. By sending crafted regex input, a remote authenticated attacker could exploit this vulnerability to cause a denial of service condition."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-1929",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the devcert npm package, when an attacker is able to supply arbitrary input to the certificateFor method"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-1930",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the eth-account PyPI package, when an attacker is able to supply arbitrary input to the encode_structured_data method"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-1954",
+    "description": [
+      "A Regular Expression Denial of Service vulnerability in GitLab CE/EE affecting all versions from 1.0.2 prior to 14.10.5, 15.0 prior to 15.0.4, and 15.1 prior to 15.1.1 allows an attacker to make a GitLab instance inaccessible via specially crafted web server response headers"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2022-2049",
+    "description": [
+      "In affected versions of Octopus Deploy it is possible to perform a Regex Denial of Service via the package upload function."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-2074",
+    "description": [
+      "In affected versions of Octopus Deploy it is possible to perform a Regex Denial of Service using the Variable Project Template."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-2075",
+    "description": [
+      "In affected versions of Octopus Deploy it is possible to perform a Regex Denial of Service targeting the build information request validation."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-21195",
+    "description": [
+      "All versions of package url-regex are vulnerable to Regular Expression Denial of Service (ReDoS) which can cause the CPU usage to crash."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-21222",
+    "description": [
+      "The package css-what before 2.1.3 are vulnerable to Regular Expression Denial of Service (ReDoS) due to the usage of insecure regular expression in the re_attr variable of index.js. The exploitation of this vulnerability could be triggered via the parse function."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-21680",
+    "description": [
+      "Marked is a markdown parser and compiler. Prior to version 4.0.10, the regular expression `block.def` may cause catastrophic backtracking against some strings and lead to a regular expression denial of service (ReDoS). Anyone who runs untrusted markdown through a vulnerable version of marked and does not use a worker with a time limit may be affected. This issue is patched in version 4.0.10. As a workaround, avoid running untrusted markdown through marked or run marked on a worker thread and set a reasonable time limit to prevent draining resources."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-21681",
+    "description": [
+      "Marked is a markdown parser and compiler. Prior to version 4.0.10, the regular expression `inline.reflinkSearch` may cause catastrophic backtracking against some strings and lead to a denial of service (DoS). Anyone who runs untrusted markdown through a vulnerable version of marked and does not use a worker with a time limit may be affected. This issue is patched in version 4.0.10. As a workaround, avoid running untrusted markdown through marked or run marked on a worker thread and set a reasonable time limit to prevent draining resources."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-23548",
+    "description": [
+      "Discourse is an option source discussion platform. Prior to version 2.8.14 on the `stable` branch and version 2.9.0.beta16 on the `beta` and `tests-passed` branches, parsing posts can be susceptible to regular expression denial of service (ReDoS) attacks. This issue is patched in versions 2.8.14 and 2.9.0.beta16. There are no known workarounds."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-24373",
+    "description": [
+      "The package react-native-reanimated before 3.0.0-rc.1 are vulnerable to Regular Expression Denial of Service (ReDoS) due to improper usage of regular expression in the parser of Colors.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25598",
+    "description": [
+      "Apache DolphinScheduler user registration is vulnerable to Regular express Denial of Service (ReDoS) attacks, Apache DolphinScheduler users should upgrade to version 2.0.5 or higher."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25758",
+    "description": [
+      "All versions of package scss-tokenizer are vulnerable to Regular Expression Denial of Service (ReDoS) via the loadAnnotation() function, due to the usage of insecure regex."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25844",
+    "description": [
+      "The package angular after 1.7.0 are vulnerable to Regular Expression Denial of Service (ReDoS) by providing a custom locale rule that makes it possible to assign the parameter in posPre: ' '.repeat() of NUMBER_FORMATS.PATTERNS[1].posPre with a very high value. **Note:** 1) This package has been deprecated and is no longer maintained. 2) The vulnerable versions are 1.7.0 and higher."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25858",
+    "description": [
+      "The package terser before 4.8.1, from 5.0.0 and before 5.14.2 are vulnerable to Regular Expression Denial of Service (ReDoS) due to insecure usage of regular expressions."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25883",
+    "description": [
+      "Versions of the package semver before 7.5.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.\r\r\r"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25887",
+    "description": [
+      "The package sanitize-html before 2.7.1 are vulnerable to Regular Expression Denial of Service (ReDoS) due to insecure global regular expression replacement logic of HTML comment removal."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25901",
+    "description": [
+      "Versions of the package cookiejar before 2.1.4 are vulnerable to Regular Expression Denial of Service (ReDoS) via the Cookie.parse function, which uses an insecure regular expression."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25918",
+    "description": [
+      "The package shescape from 1.5.10 and before 1.6.1 are vulnerable to Regular Expression Denial of Service (ReDoS) via the escape function in index.js, due to the usage of insecure regex in the escapeArgBash function."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-25927",
+    "description": [
+      "Versions of the package ua-parser-js from 0.7.30 and before 0.7.33, from 0.8.1 and before 1.0.33 are vulnerable to Regular Expression Denial of Service (ReDoS) via the trim() function.\r\r"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-29158",
+    "description": [
+      "Apache OFBiz up to version 18.12.05 is vulnerable to Regular Expression Denial of Service (ReDoS) in the way it handles URLs provided by external, unauthenticated users. Upgrade to 18.12.06 or apply patches at https://issues.apache.org/jira/browse/OFBIZ-12599"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-29169",
+    "description": [
+      "BigBlueButton is an open source web conferencing system. Versions starting with 2.2 and prior to 2.3.19, 2.4.7, and 2.5.0-beta.2 are vulnerable to regular expression denial of service (ReDoS) attacks. By using specific a RegularExpression, an attacker can cause denial of service for the bbb-html5 service. The useragent library performs checking of device by parsing the input of User-Agent header and lets it go through lookupUserAgent() (alias of useragent.lookup() ). This function handles input by regexing and attackers can abuse that by providing some ReDos payload using `SmartWatch`. The maintainers removed `htmlclient/useragent` from versions 2.3.19, 2.4.7, and 2.5.0-beta.2. As a workaround, disable NginX forwarding the requests to the handler according to the directions in the GitHub Security Advisory."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-31147",
+    "description": [
+      "The jQuery Validation Plugin (jquery-validation) provides drop-in validation for forms. Versions of jquery-validation prior to 1.19.5 are vulnerable to regular expression denial of service (ReDoS) when an attacker is able to supply arbitrary input to the url2 method. This is due to an incomplete fix for CVE-2021-43306. Users should upgrade to version 1.19.5 to receive a patch."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-31781",
+    "description": [
+      "Apache Tapestry up to version 5.8.1 is vulnerable to Regular Expression Denial of Service (ReDoS) in the way it handles Content Types. Specially crafted Content Types may cause catastrophic backtracking, taking exponential time to complete. Specifically, this is about the regular expression used on the parameter of the org.apache.tapestry5.http.ContentType class. Apache Tapestry 5.8.2 has a fix for this vulnerability. Notice the vulnerability cannot be triggered by web requests in Tapestry code alone. It would only happen if there's some non-Tapestry codepath passing some outside input to the ContentType class constructor."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-33879",
+    "description": [
+      "The initial fixes in CVE-2022-30126 and CVE-2022-30973 for regexes in the StandardsExtractingContentHandler were insufficient, and we found a separate, new regex DoS in a different regex in the StandardsExtractingContentHandler. These are now fixed in 1.28.4 and 2.4.1."
+    ],
+    "attackVector": "LOCAL",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 3.3,
+    "baseSeverity": "LOW",
+    "exploitabilityScore": 1.8,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2022-34402",
+    "description": [
+      "Dell Wyse ThinOS 2205 contains a Regular Expression Denial of Service Vulnerability in UI. An admin privilege attacker could potentially exploit this vulnerability, leading to denial-of-service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "HIGH",
+    "userInteraction": "NONE",
+    "baseScore": 4.9,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 1.2,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-34428",
+    "description": [
+      "Dell Hybrid Client prior to version 1.8 contains a Regular Expression Denial of Service Vulnerability in the UI. An adversary with WMS group admin access could potentially exploit this vulnerability, leading to temporary denial-of-service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "HIGH",
+    "userInteraction": "NONE",
+    "baseScore": 2.7,
+    "baseSeverity": "LOW",
+    "exploitabilityScore": 1.2,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2022-34749",
+    "description": [
+      "In mistune through 2.0.2, support of inline markup is implemented by using regular expressions that can involve a high amount of backtracking on certain edge cases. This behavior is commonly named catastrophic backtracking."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-3517",
+    "description": [
+      "A vulnerability was found in the minimatch package. This flaw allows a Regular Expression Denial of Service (ReDoS) when calling the braceExpand function with specific arguments, resulting in a Denial of Service."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-36034",
+    "description": [
+      "nitrado.js is a type safe wrapper for the Nitrado API. Possible ReDoS with lib input of `{{` and with many repetitions of `{{|`. This issue has been patched in all versions above `0.2.5`. There are currently no known workarounds."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-36064",
+    "description": [
+      "Shescape is a shell escape package for JavaScript. An Inefficient Regular Expression Complexity vulnerability impacts users that use Shescape to escape arguments for the Unix shells `Bash` and `Dash`, or any not-officially-supported Unix shell; and/or using the `escape` or `escapeAll` functions with the `interpolation` option set to `true`. An attacker can cause polynomial backtracking or quadratic runtime in terms of the input string length due to two Regular Expressions in Shescape that are vulnerable to Regular Expression Denial of Service (ReDoS). This bug has been patched in v1.5.10. For `Dash` only, this bug has been patched since v1.5.9. As a workaround, a maximum length can be enforced on input strings to Shescape to reduce the impact of the vulnerability. It is not recommended to try and detect vulnerable input strings, as the logic for this may end up being vulnerable to ReDoS itself."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-37259",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) flaw was found in stealjs steal 2.2.4 via the string variable in babel.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-37260",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) flaw was found in stealjs steal 2.2.4 via the input variable in main.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-37262",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) flaw was found in stealjs steal 2.2.4 via the source and sourceWithComments variable in main.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-37599",
+    "description": [
+      "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the resourcePath variable in interpolateName.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-37603",
+    "description": [
+      "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-37620",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) flaw was found in kangax html-minifier 4.0.0 via the candidate variable in htmlminifier.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-39280",
+    "description": [
+      "dparse is a parser for Python dependency files. dparse in versions before 0.5.2 contain a regular expression that is vulnerable to a Regular Expression Denial of Service. All the users parsing index server URLs with dparse are impacted by this vulnerability. A patch has been applied in version `0.5.2`, all the users are advised to upgrade to `0.5.2` as soon as possible. Users unable to upgrade should avoid passing index server URLs in the source file to be parsed."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-40023",
+    "description": [
+      "Sqlalchemy mako before 1.2.2 is vulnerable to Regular expression Denial of Service when using the Lexer class to parse. This also affects babelplugin and linguaplugin."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-40896",
+    "description": [
+      "A ReDoS issue was discovered in pygments/lexers/smithy.py in pygments through 2.15.0 via SmithyLexer."
+    ],
+    "attackVector": "LOCAL",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 5.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 1.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-40897",
+    "description": [
+      "Python Packaging Authority (PyPA) setuptools before 65.5.1 allows remote attackers to cause a denial of service via HTML in a crafted package or custom PackageIndex page. There is a Regular Expression Denial of Service (ReDoS) in package_index.py."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "HIGH",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.9,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.2,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-42124",
+    "description": [
+      "ReDoS vulnerability in LayoutPageTemplateEntryUpgradeProcess in Liferay Portal 7.3.2 through 7.4.3.4 and Liferay DXP 7.2 fix pack 9 through fix pack 18, 7.3 before update 4, and DXP 7.4 GA allows remote attackers to consume an excessive amount of server resources via a crafted payload injected into the 'name' field of a layout prototype."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-42964",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the pymatgen PyPI package, when an attacker is able to supply arbitrary input to the GaussianInput.from_string method"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-42965",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the snowflake-connector-python PyPI package, when an attacker is able to supply arbitrary input to the undocumented get_file_transfer_type method"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-42966",
+    "description": [
+      "An exponential ReDoS (Regular Expression Denial of Service) can be triggered in the cleo PyPI package, when an attacker is able to supply arbitrary input to the Table.set_rows method"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2022-42969",
+    "description": [
+      "The py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled. Note: This has been disputed by multiple third parties as not being reproduceable and they argue this is not a valid vulnerability."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-0632",
+    "description": [
+      "An issue has been discovered in GitLab affecting all versions starting from 15.2 before 16.0.8, all versions starting from 16.1 before 16.1.3, all versions starting from 16.2 before 16.2.2. A Regular Expression Denial of Service was possible by using crafted payloads to search Harbor Registry."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-1894",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) issue was discovered in Puppet Server 7.9.2 certificate validation. An issue related to specifically crafted certificate names significantly slowed down server operations."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2023-2132",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 15.4 before 15.10.8, all versions starting from 15.11 before 15.11.7, all versions starting from 16.0 before 16.0.2. A DollarMathPostFilter Regular Expression Denial of Service in was possible by sending crafted payloads to the preview_markdown endpoint."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-2198",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 8.7 before 15.10.8, all versions starting from 15.11 before 15.11.7, all versions starting from 16.0 before 16.0.2. A Regular Expression Denial of Service was possible via sending crafted payloads to the preview_markdown endpoint."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-2199",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 12.0 before 15.10.8, all versions starting from 15.11 before 15.11.7, all versions starting from 16.0 before 16.0.2. A Regular Expression Denial of Service was possible via sending crafted payloads to the preview_markdown endpoint."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-2232",
+    "description": [
+      "An issue has been discovered in GitLab affecting all versions starting from 15.10 before 16.1, leading to a ReDoS vulnerability in the Jira prefix"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-22792",
+    "description": [
+      "A regular expression based DoS vulnerability in Action Dispatch <6.0.6.1,< 6.1.7.1, and <7.0.4.1. Specially crafted cookies, in combination with a specially crafted X_FORWARDED_HOST header can cause the regular expression engine to enter a state of catastrophic backtracking. This can cause the process to use large amounts of CPU and memory, leading to a possible DoS vulnerability All users running an affected release should either upgrade or use one of the workarounds immediately."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-22795",
+    "description": [
+      "A regular expression based DoS vulnerability in Action Dispatch <6.1.7.1 and <7.0.4.1 related to the If-None-Match header. A specially crafted HTTP If-None-Match header can cause the regular expression engine to enter a state of catastrophic backtracking, when on a version of Ruby below 3.2.0. This can cause the process to use large amounts of CPU and memory, leading to a possible DoS vulnerability All users running an affected release should either upgrade or use one of the workarounds immediately."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-22796",
+    "description": [
+      "A regular expression based DoS vulnerability in Active Support <6.1.7.1 and <7.0.4.1. A specially crafted string passed to the underscore method can cause the regular expression engine to enter a state of catastrophic backtracking. This can cause the process to use large amounts of CPU and memory, leading to a possible DoS vulnerability."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-22799",
+    "description": [
+      "A ReDoS based DoS vulnerability in the GlobalID <1.0.1 which could allow an attacker supplying a carefully crafted input can cause the regular expression engine to take an unexpected amount of time. All users running an affected release should either upgrade or use one of the workarounds immediately."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-23621",
+    "description": [
+      "Discourse is an open-source discussion platform. Prior to version 3.0.1 on the `stable` branch and version 3.1.0.beta2 on the `beta` and `tests-passed` branches, a malicious user can cause a regular expression denial of service using a carefully crafted user agent. This issue is patched in version 3.0.1 on the `stable` branch and version 3.1.0.beta2 on the `beta` and `tests-passed` branches. There are no known workarounds."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-23925",
+    "description": [
+      "Switcher Client is a JavaScript SDK to work with Switcher API which is cloud-based Feature Flag. Unsanitized input flows into Strategy match operation (EXIST), where it is used to build a regular expression. This may result in a Regular expression Denial of Service attack (reDOS). This issue has been patched in version 3.1.4. As a workaround, avoid using Strategy settings that use REGEX in conjunction with EXIST and NOT_EXIST operations.\n"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-24038",
+    "description": [
+      "The HTML-StripScripts module through 1.06 for Perl allows _hss_attval_style ReDoS because of catastrophic backtracking for HTML content with certain style attributes."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-24807",
+    "description": [
+      "Undici is an HTTP/1.1 client for Node.js. Prior to version 5.19.1, the `Headers.set()` and `Headers.append()` methods are vulnerable to Regular Expression Denial of Service (ReDoS) attacks when untrusted values are passed into the functions. This is due to the inefficient regular expression used to normalize the values in the `headerValueNormalize()` utility function. This vulnerability was patched in v5.19.1. No known workarounds are available."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-25167",
+    "description": [
+      "Discourse is an open source discussion platform. In affected versions a malicious user can cause a regular expression denial of service using a carefully crafted git URL. This issue is patched in the latest stable, beta and tests-passed versions of Discourse. Users are advised to upgrade. There are no known workarounds for this issue."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "REQUIRED",
+    "baseScore": 5.7,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.1,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-26103",
+    "description": [
+      "Versions of the package deno before 1.31.0 are vulnerable to Regular Expression Denial of Service (ReDoS) due to the upgradeWebSocket function, which contains regexes in the form of /s*,s*/, used for splitting the Connection/Upgrade header. A specially crafted Connection/Upgrade header can be used to significantly slow down a web socket server.\r\r"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-26112",
+    "description": [
+      "All versions of the package configobj are vulnerable to Regular Expression Denial of Service (ReDoS) via the validate function, using (.+?)\\((.*)\\).\r\r**Note:** This is only exploitable in the case of a developer, putting the offending value in a server side configuration file."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "HIGH",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.9,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.2,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-26115",
+    "description": [
+      "All versions of the package word-wrap are vulnerable to Regular Expression Denial of Service (ReDoS) due to the usage of an insecure regular expression within the result variable."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-26116",
+    "description": [
+      "Versions of the package angular from 1.2.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the angular.copy() utility function due to the usage of an insecure regular expression. Exploiting this vulnerability is possible by a large carefully-crafted input, which can result in catastrophic backtracking."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2023-26117",
+    "description": [
+      "Versions of the package angular from 1.0.0 are vulnerable to Regular Expression Denial of Service (ReDoS) via the $resource service due to the usage of an insecure regular expression. Exploiting this vulnerability is possible by a large carefully-crafted input, which can result in catastrophic backtracking."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2023-26118",
+    "description": [
+      "Versions of the package angular from 1.4.9 are vulnerable to Regular Expression Denial of Service (ReDoS) via the <input type=\"url\"> element due to the usage of an insecure regular expression in the input[url] functionality. Exploiting this vulnerability is possible by a large carefully-crafted input, which can result in catastrophic backtracking."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2023-27704",
+    "description": [
+      "Void Tools Everything lower than v1.4.1.1022 was discovered to contain a Regular Expression Denial of Service (ReDoS)."
+    ],
+    "attackVector": "LOCAL",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 5.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 1.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-28755",
+    "description": [
+      "A ReDoS issue was discovered in the URI component through 0.12.0 in Ruby through 3.2.1. The URI parser mishandles invalid URLs that have specific characters. It causes an increase in execution time for parsing strings to URI objects. The fixed versions are 0.12.1, 0.11.1, 0.10.2 and 0.10.0.1."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2023-28756",
+    "description": [
+      "A ReDoS issue was discovered in the Time component through 0.2.1 in Ruby through 3.2.1. The Time parser mishandles invalid URLs that have specific characters. It causes an increase in execution time for parsing strings to Time objects. The fixed versions are 0.1.1 and 0.2.2."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2023-30608",
+    "description": [
+      "sqlparse is a non-validating SQL parser module for Python. In affected versions the SQL parser contains a regular expression that is vulnerable to ReDoS (Regular Expression Denial of Service). This issue was introduced by commit `e75e358`. The vulnerability may lead to Denial of Service (DoS). This issues has been fixed in sqlparse 0.4.4 by commit `c457abd5f`. Users are advised to upgrade. There are no known workarounds for this issue."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-31606",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) issue was discovered in the sanitize_html function of redcloth gem v4.0.0. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted payload."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-32758",
+    "description": [
+      "giturlparse (aka git-url-parse) through 1.2.2, as used in Semgrep 1.5.2 through 1.24.1, is vulnerable to ReDoS (Regular Expression Denial of Service) if parsing untrusted URLs. This might be relevant if Semgrep is analyzing an untrusted package (for example, to check whether it accesses any Git repository at an http:// URL), and that package's author placed a ReDoS attack payload in a URL used by the package."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-33289",
+    "description": [
+      "The urlnorm crate through 0.1.4 for Rust allows Regular Expression Denial of Service (ReDos) via a crafted URL to lib.rs. NOTE: the Supplier disputes this, taking the position that \"Slow printing of URLs is not a CVE.\""
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-33290",
+    "description": [
+      "The git-url-parse crate through 0.4.4 for Rust allows Regular Expression Denial of Service (ReDos) via a crafted URL to normalize_url in lib.rs, a similar issue to CVE-2023-32758 (Python)."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-3364",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 8.14 before 16.0.8, all versions starting from 16.1 before 16.1.3, all versions starting from 16.2 before 16.2.2. A Regular Expression Denial of Service was possible via sending crafted payloads which use AutolinkFilter to the preview_markdown endpoint."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-33950",
+    "description": [
+      "Pattern Redirects in Liferay Portal 7.4.3.48 through 7.4.3.76, and Liferay DXP 7.4 update 48 through 76 allows regular expressions that are vulnerable to ReDoS attacks to be used as patterns, which allows remote attackers to consume an excessive amount of server resources via crafted request URLs."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-3424",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 10.3 before 15.11.10, all versions starting from 16.0 before 16.0.6, all versions starting from 16.1 before 16.1.1. A Regular Expression Denial of Service was possible via sending crafted payloads to the preview_markdown endpoint."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-36053",
+    "description": [
+      "In Django 3.2 before 3.2.20, 4 before 4.1.10, and 4.2 before 4.2.3, EmailValidator and URLValidator are subject to a potential ReDoS (regular expression denial of service) attack via a very large number of domain name labels of emails and URLs."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-36617",
+    "description": [
+      "A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with rfc2396_parser.rb and rfc3986_parser.rb. NOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2023-3909",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 12.3 before 16.3.6, all versions starting from 16.4 before 16.4.2, all versions starting from 16.5 before 16.5.1. A Regular Expression Denial of Service was possible by adding a large string in timeout input in gitlab-ci.yml file."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-39174",
+    "description": [
+      "In JetBrains TeamCity before 2023.05.2 a ReDoS attack was possible via integration with issue trackers"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-39619",
+    "description": [
+      "ReDos in NPMJS Node Email Check v.1.0.4 allows an attacker to cause a denial of service via a crafted string to the scpSyntax component."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-39663",
+    "description": [
+      "Mathjax up to v2.7.9 was discovered to contain two Regular expression Denial of Service (ReDoS) vulnerabilities in MathJax.js via the components pattern and markdownPattern. NOTE: the vendor disputes this because the regular expressions are not applied to user input; thus, there is no risk."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-3994",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 9.3 before 16.0.8, all versions starting from 16.1 before 16.1.3, all versions starting from 16.2 before 16.2.2. A Regular Expression Denial of Service was possible via sending crafted payloads which use ProjectReferenceFilter to the preview_markdown endpoint."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-40599",
+    "description": [
+      "Regular expression Denial-of-Service (ReDoS) exists in multiple add-ons for Mailform Pro CGI 4.3.1.3 and earlier, which allows a remote unauthenticated attacker to cause a denial-of-service condition. Affected add-ons are as follows: call/call.js, prefcodeadv/search.cgi, estimate/estimate.js, search/search.js, suggest/suggest.js, and coupon/coupon.js."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-43646",
+    "description": [
+      "get-func-name is a module to retrieve a function's name securely and consistently both in NodeJS and the browser. Versions prior to 2.0.1 are subject to a regular expression denial of service (redos) vulnerability which may lead to a denial of service when parsing malicious input. This vulnerability can be exploited when there is an imbalance in parentheses, which results in excessive backtracking and subsequently increases the CPU load and processing time significantly. This vulnerability can be triggered using the following input: '\\t'.repeat(54773) + '\\t/function/i'. This issue has been addressed in commit `f934b228b` which has been included in releases from 2.0.1. Users are advised to upgrade. There are no known workarounds for this vulnerability."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-46402",
+    "description": [
+      "git-urls 1.0.0 allows ReDOS (Regular Expression Denial of Service) in urls.go."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-50249",
+    "description": [
+      "Sentry-Javascript is official Sentry SDKs for JavaScript. A ReDoS (Regular expression Denial of Service) vulnerability has been identified in Sentry's Astro SDK 7.78.0-7.86.0. Under certain conditions, this vulnerability allows an attacker to cause excessive computation times on the server, leading to denial of service (DoS). This vulnerability has been patched in sentry/astro version 7.87.0."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2023-6159",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions from 12.7 prior to 16.6.6, 16.7 prior to 16.7.4, and 16.8 prior to 16.8.1 It was possible for an attacker to trigger a Regular Expression Denial of Service via a `Cargo.toml` containing maliciously crafted input."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-10624",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) vulnerability exists in the gradio-app/gradio repository, affecting the gr.Datetime component. The affected version is git commit 98cbcae. The vulnerability arises from the use of a regular expression `^(?:\\s*now\\s*(?:-\\s*(\\d+)\\s*([dmhs]))?)?\\s*$` to process user input. In Python's default regex engine, this regular expression can take polynomial time to match certain crafted inputs. An attacker can exploit this by sending a crafted HTTP request, causing the gradio process to consume 100% CPU and potentially leading to a Denial of Service (DoS) condition on the server."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-10955",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) vulnerability exists in gaizhenbiao/chuanhuchatgpt, as of commit 20b2e02. The server uses the regex pattern `r'<[^>]+>'` to parse user input. In Python's default regex engine, this pattern can take polynomial time to match certain crafted inputs. An attacker can exploit this by uploading a malicious JSON payload, causing the server to consume 100% CPU for an extended period. This can lead to a Denial of Service (DoS) condition, potentially affecting the entire server."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-12388",
+    "description": [
+      "A vulnerability in binary-husky/gpt_academic version 310122f allows for a Regular Expression Denial of Service (ReDoS) attack. The application uses a regular expression to parse user input, which can take polynomial time to match certain crafted inputs. This allows an attacker to send a small malicious payload to the server, causing it to become unresponsive and unable to handle any requests from other users."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-12391",
+    "description": [
+      "A vulnerability in binary-husky/gpt_academic, as of commit 310122f, allows for a Regular Expression Denial of Service (ReDoS) attack. The function '??????(?????????????)' permits the execution of user-provided regular expressions. Certain regular expressions can cause the Python RE engine to take exponential time to execute, leading to a Denial of Service (DoS) condition. An attacker who controls both the regular expression and the search string can exploit this vulnerability to hang the server for an arbitrary amount of time."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-12579",
+    "description": [
+      "The Minify HTML plugin for WordPress is vulnerable to Regular Expression Denial of Service (ReDoS) in all versions up to, and including, 2.1.10. This is due to processing user-supplied input as a regular expression.  This makes it possible for unauthenticated attackers to create comments that can cause catastrophic backtracking and break pages."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 5.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 3.9,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2024-12720",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) vulnerability was identified in the huggingface/transformers library, specifically in the file tokenization_nougat_fast.py. The vulnerability occurs in the post_process_single() function, where a regular expression processes specially crafted input. The issue stems from the regex exhibiting exponential time complexity under certain conditions, leading to excessive backtracking. This can result in significantly high CPU usage and potential application downtime, effectively creating a Denial of Service (DoS) scenario. The affected version is v4.46.3 (latest)."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-13896",
+    "description": [
+      "The WP-GeSHi-Highlight — rock-solid syntax highlighting for 259 languages WordPress plugin through 1.4.3 processes user-supplied input as a regular expression via the wp_geshi_filter_replace_code() function, which could lead to Regular Expression Denial of Service (ReDoS) issue"
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-13926",
+    "description": [
+      "The WP-Syntax WordPress plugin through 1.2 does not properly handle input, allowing an attacker to create a post containing a large number of tags, thereby exploiting a catastrophic backtracking issue in the regular expression processing to cause a DoS."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-1892",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) vulnerability exists in the XMLFeedSpider class of the scrapy/scrapy project, specifically in the parsing of XML content. By crafting malicious XML content that exploits inefficient regular expression complexity used in the parsing process, an attacker can cause a denial-of-service (DoS) condition. This vulnerability allows for the system to hang and consume significant resources, potentially rendering services that utilize Scrapy for XML processing unresponsive."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "REQUIRED",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-1963",
+    "description": [
+      "An issue has been discovered in GitLab CE/EE affecting all versions starting from 8.4 prior to 16.10.7, starting from 16.11 prior to 16.11.4, and starting from 17.0 prior to 17.0.2. A vulnerability in GitLab's Asana integration allowed an attacker to potentially cause a regular expression denial of service by sending specially crafted requests."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-21490",
+    "description": [
+      "This affects versions of the package angular from 1.3.0. A regular expression used to split the value of the ng-srcset directive is vulnerable to super-linear runtime due to backtracking. With large carefully-crafted input, this can result in catastrophic backtracking and cause a denial of service. \r\r\r**Note:**\r\rThis package is EOL and will not receive any updates to address this issue. Users should migrate to [@angular/core](https://www.npmjs.com/package/@angular/core)."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-21503",
+    "description": [
+      "Versions of the package black before 24.3.0 are vulnerable to Regular Expression Denial of Service (ReDoS) via the lines_with_leading_tabs_expanded function in the strings.py file. An attacker could exploit this vulnerability by crafting a malicious input that causes a denial of service.\r\rExploiting this vulnerability is possible when running Black on untrusted input, or if you habitually put thousands of leading tab characters in your docstrings."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-21538",
+    "description": [
+      "Versions of the package cross-spawn before 7.0.5 are vulnerable to Regular Expression Denial of Service (ReDoS) due to improper input sanitization. An attacker can increase the CPU usage and crash the program by crafting a very large and well crafted string."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-21539",
+    "description": [
+      "Versions of the package @eslint/plugin-kit before 0.2.3 are vulnerable to Regular Expression Denial of Service (ReDoS) due to improper input sanitization. An attacker can increase the CPU usage and crash the program by exploiting this vulnerability."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-22363",
+    "description": [
+      "SheetJS Community Edition before 0.20.2 is vulnerable.to Regular Expression Denial of Service (ReDoS)."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-22640",
+    "description": [
+      "TCPDF version <=6.6.5 is vulnerable to ReDoS (Regular Expression Denial of Service) if parsing an untrusted HTML page with a crafted color."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-22641",
+    "description": [
+      "TCPDF version 6.6.5 and before is vulnerable to ReDoS (Regular Expression Denial of Service) if parsing an untrusted SVG file."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-23732",
+    "description": [
+      "The JSON loader in Embedchain before 0.1.57 allows a ReDoS (regular expression denial of service) via a long string to json.py."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-24762",
+    "description": [
+      "`python-multipart` is a streaming multipart parser for Python. When using form data, `python-multipart` uses a Regular Expression to parse the HTTP `Content-Type` header, including options. An attacker could send a custom-made `Content-Type` option that is very difficult for the RegEx to process, consuming CPU resources and stalling indefinitely (minutes or more) while holding the main event loop. This means that process can't handle any more requests, leading to regular expression denial of service. This vulnerability has been patched in version 0.0.7."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-25126",
+    "description": [
+      "Rack is a modular Ruby web server interface. Carefully crafted content type headers can cause Rack’s media type parser to take much longer than expected, leading to a possible denial of service vulnerability (ReDos 2nd degree polynomial). This vulnerability is patched in 3.0.9.1 and 2.2.8.1."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-25354",
+    "description": [
+      "RegEx Denial of Service in domain-suffix 1.0.8 allows attackers to crash the application via crafted input to the parse function."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-25885",
+    "description": [
+      "An issue in the getcolor function in utils.py of xhtml2pdf v0.2.13 allows attackers to cause a Regular expression Denial of Service (ReDOS) via supplying a crafted string."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-26142",
+    "description": [
+      "Rails is a web-application framework. Starting in version 7.1.0, there is a possible ReDoS vulnerability in the Accept header parsing routines of Action Dispatch. This vulnerability is patched in 7.1.3.1. Ruby 3.2 has mitigations for this problem, so Rails applications using Ruby 3.2 or newer are unaffected."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-2800",
+    "description": [
+      "ReDoS flaw in RefMatcher when matching branch names using wildcards in GitLab EE/CE affecting all versions from 11.3 prior to 17.0.6, 17.1 prior to 17.1.4, and 17.2 prior to 17.2.2 allows denial of service via Regex backtracking."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-36751",
+    "description": [
+      "An issue in parse-uri v1.0.9 allows attackers to cause a Regular expression Denial of Service (ReDoS) via a crafted URL."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-3772",
+    "description": [
+      "Regular expression denial of service in Pydanic < 2.4.0, < 1.10.13 allows remote attackers to cause denial of service via a crafted email string."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-39249",
+    "description": [
+      "Async <= 2.6.4 and <= 3.2.5 are vulnerable to ReDoS (Regular Expression Denial of Service) while parsing function in autoinject function. NOTE: this is disputed by the supplier because there is no realistic threat model: regular expressions are not used with untrusted input."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-39316",
+    "description": [
+      "Rack is a modular Ruby web server interface. Starting in version 3.1.0 and prior to version 3.1.5, Regular Expression Denial of Service (ReDoS) vulnerability exists in the `Rack::Request::Helpers` module when parsing HTTP Accept headers. This vulnerability can be exploited by an attacker sending specially crafted `Accept-Encoding` or `Accept-Language` headers, causing the server to spend excessive time processing the request and leading to a Denial of Service (DoS). The fix for CVE-2024-26146 was not applied to the main branch and thus while the issue was fixed for the Rack v3.0 release series, it was not fixed in the v3.1 release series until v3.1.5. Users of versions on the 3.1 branch should upgrade to version 3.1.5 to receive the fix."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-4067",
+    "description": [
+      "The NPM package `micromatch` prior to 4.0.8 is vulnerable to Regular Expression Denial of Service (ReDoS). The vulnerability occurs in `micromatch.braces()` in `index.js` because the pattern `.*` will greedily match anything. By passing a malicious payload, the pattern matching will keep backtracking to the input while it doesn't find the closing bracket. As the input size increases, the consumption time will also increase until it causes the application to hang or slow down. There was a merged fix but further testing shows the issue persists. This issue should be mitigated by using a safe pattern that won't start backtracking the regular expression due to greedy matching. This issue was fixed in version 4.0.8."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-41128",
+    "description": [
+      "Action Pack is a framework for handling and responding to web requests. Starting in version 3.1.0 and prior to versions 6.1.7.9, 7.0.8.5, 7.1.4.1, and 7.2.1.1, there is a possible ReDoS vulnerability in the query parameter filtering routines of Action Dispatch. Carefully crafted query parameters can cause query parameter filtering to take an unexpected amount of time, possibly resulting in a DoS vulnerability. All users running an affected release should either upgrade to version 6.1.7.9, 7.0.8.5, 7.1.4.1, or 7.2.1.1 or apply the relevant patch immediately. One may use Ruby 3.2 as a workaround. Ruby 3.2 has mitigations for this problem, so Rails applications using Ruby 3.2 or newer are unaffected. Rails 8.0.0.beta1 depends on Ruby 3.2 or greater so is unaffected."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-4148",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) vulnerability exists in the lunary-ai/lunary application, version 1.2.10. An attacker can exploit this vulnerability by maliciously manipulating regular expressions, which can significantly impact the response time of the application and potentially render it completely non-functional. Specifically, the vulnerability can be triggered by sending a specially crafted request to the application, leading to a denial of service where the application crashes."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-41655",
+    "description": [
+      "TF2 Item Format helps users format TF2 items to the community standards. Versions of `tf2-item-format` since at least `4.2.6`  and prior to `5.9.14` are vulnerable to a Regular Expression Denial of Service (ReDoS) attack when parsing crafted user input. This vulnerability can be exploited by an attacker to perform DoS attacks on any service that uses any `tf2-item-format` to parse user input. Version `5.9.14` contains a fix for the issue."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-41818",
+    "description": [
+      "fast-xml-parser is an open source, pure javascript xml parser. a ReDOS exists on currency.js. This vulnerability is fixed in 4.4.1."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-46242",
+    "description": [
+      "An issue in the validate_email function in CTFd/utils/validators/__init__.py of CTFd 3.7.3 allows attackers to cause a Regular expression Denial of Service (ReDoS) via supplying a crafted string as e-mail address during registration."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-47887",
+    "description": [
+      "Action Pack is a framework for handling and responding to web requests. Starting in version 4.0.0 and prior to versions 6.1.7.9, 7.0.8.5, 7.1.4.1, and 7.2.1.1, there is a possible ReDoS vulnerability in Action Controller's HTTP Token authentication. For applications using HTTP Token authentication via `authenticate_or_request_with_http_token` or similar, a carefully crafted header may cause header parsing to take an unexpected amount of time, possibly resulting in a DoS vulnerability. All users running an affected release should either upgrade to versions 6.1.7.9, 7.0.8.5, 7.1.4.1, or 7.2.1.1 or apply the relevant patch immediately. One may choose to use Ruby 3.2 as a workaround.Ruby 3.2 has mitigations for this problem, so Rails applications using Ruby 3.2 or newer are unaffected. Rails 8.0.0.beta1 depends on Ruby 3.2 or greater so is unaffected."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-47888",
+    "description": [
+      "Action Text brings rich text content and editing to Rails. Starting in version 6.0.0 and prior to versions 6.1.7.9, 7.0.8.5, 7.1.4.1, and 7.2.1.1, there is a possible ReDoS vulnerability in the `plain_text_for_blockquote_node helper` in Action Text. Carefully crafted text can cause the `plain_text_for_blockquote_node` helper to take an unexpected amount of time, possibly resulting in a DoS vulnerability. All users running an affected release should either upgrade to versions 6.1.7.9, 7.0.8.5, 7.1.4.1, or 7.2.1.1 or apply the relevant patch immediately. As a workaround, users can avoid calling `plain_text_for_blockquote_node` or upgrade to Ruby 3.2. Ruby 3.2 has mitigations for this problem, so Rails applications using Ruby 3.2 or newer are unaffected. Rails 8.0.0.beta1 depends on Ruby 3.2 or greater so is unaffected."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-47889",
+    "description": [
+      "Action Mailer is a framework for designing email service layers. Starting in version 3.0.0 and prior to versions 6.1.7.9, 7.0.8.5, 7.1.4.1, and 7.2.1.1, there is a possible ReDoS vulnerability in the block_format helper in Action Mailer. Carefully crafted text can cause the block_format helper to take an unexpected amount of time, possibly resulting in a DoS vulnerability. All users running an affected release should either upgrade to versions 6.1.7.9, 7.0.8.5, 7.1.4.1, or 7.2.1.1 or apply the relevant patch immediately. As a workaround, users can avoid calling the `block_format` helper or upgrade to Ruby 3.2. Ruby 3.2 has mitigations for this problem, so Rails applications using Ruby 3.2 or newer are unaffected. Rails 8.0.0.beta1 requires Ruby 3.2 or greater so is unaffected."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-48938",
+    "description": [
+      "Znuny before LTS 6.5.1 through 6.5.10 and 7.0.1 through 7.0.16 allows DoS/ReDos via email. Parsing the content of emails where HTML code is copied from Microsoft Word could lead to high CPU usage and block the parsing process."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-49761",
+    "description": [
+      "REXML is an XML toolkit for Ruby. The REXML gem before 3.3.9 has a ReDoS vulnerability when it parses an XML that has many digits between &# and x...; in a hex numeric character reference (&#x...;). This does not happen with Ruby 3.2 or later. Ruby 3.1 is the only affected maintained Ruby. The REXML gem 3.3.9 or later include the patch to fix the vulnerability."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-50574",
+    "description": [
+      "In JetBrains YouTrack before 2024.3.47707 potential ReDoS exploit was possible via email header parsing in Helpdesk functionality"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-52524",
+    "description": [
+      "Giskard is an evaluation and testing framework for AI systems. A Remote Code Execution (ReDoS) vulnerability was discovered in Giskard component by the GitHub Security Lab team. When processing datasets with specific text patterns with Giskard detectors, this vulnerability could trigger exponential regex evaluation times, potentially leading to denial of service. Giskard versions prior to 2.15.5 are affected."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-54157",
+    "description": [
+      "In JetBrains YouTrack before 2024.3.52635 potential ReDoS was possible due to vulnerable RegExp in Ruby syntax detector"
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-5552",
+    "description": [
+      "kubeflow/kubeflow is vulnerable to a Regular Expression Denial of Service (ReDoS) attack due to inefficient regular expression complexity in its email validation mechanism. An attacker can remotely exploit this vulnerability without authentication by providing specially crafted input that causes the application to consume an excessive amount of CPU resources. This vulnerability affects the latest version of kubeflow/kubeflow, specifically within the centraldashboard-angular backend component. The impact of exploiting this vulnerability includes resource exhaustion, and service disruption."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-6038",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) vulnerability exists in the latest version of gaizhenbiao/chuanhuchatgpt. The vulnerability is located in the filter_history function within the utils.py module. This function takes a user-provided keyword and attempts to match it against chat history filenames using a regular expression search. Due to the lack of sanitization or validation of the keyword parameter, an attacker can inject a specially crafted regular expression, leading to a denial of service condition. This can cause severe degradation of service performance and potential system unavailability."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-6232",
+    "description": [
+      "There is a MEDIUM severity vulnerability affecting CPython.\n\n\n\n\n\nRegular expressions that allowed excessive backtracking during tarfile.TarFile header parsing are vulnerable to ReDoS via specifically-crafted tar archives."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-6434",
+    "description": [
+      "The Premium Addons for Elementor plugin for WordPress is vulnerable to Regular Expression Denial of Service (ReDoS) in all versions up to, and including, 4.10.35. This is due to processing user-supplied input as a regular expression. This makes it possible for authenticated attackers, with Author-level access and above, to create and query a malicious post title, resulting in slowing server resources."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 4.3,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 1.4
+  },
+  {
+    "cve_id": "CVE-2024-7610",
+    "description": [
+      "A Denial of Service (DoS) condition has been discovered in GitLab CE/EE affecting all versions starting with 15.9 before 17.0.6, 17.1 prior to 17.1.4, and 17.2 prior to 17.2.2. It is possible for an attacker to cause catastrophic backtracking while parsing results from Elasticsearch."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "LOW",
+    "userInteraction": "NONE",
+    "baseScore": 6.5,
+    "baseSeverity": "MEDIUM",
+    "exploitabilityScore": 2.8,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-7779",
+    "description": [
+      "A vulnerability in danswer-ai/danswer version 1 allows an attacker to perform a Regular Expression Denial of Service (ReDoS) by manipulating regular expressions. This can significantly slow down the application's response time and potentially render it completely unusable."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-8763",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) vulnerability exists in the lunary-ai/lunary repository, specifically in the compileTextTemplate function. The affected version is git be54057. An attacker can exploit this vulnerability by manipulating the regular expression /{{(.*?)}}/g, causing the server to hang indefinitely and become unresponsive to any requests. This is due to the regular expression's susceptibility to second-degree polynomial time complexity, which can be triggered by a large number of braces in the input."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-8789",
+    "description": [
+      "Lunary-ai/lunary version git 105a3f6 is vulnerable to a Regular Expression Denial of Service (ReDoS) attack. The application allows users to upload their own regular expressions, which are then executed on the server side. Certain regular expressions can have exponential runtime complexity relative to the input size, leading to potential denial of service. An attacker can exploit this by submitting a specially crafted regular expression, causing the server to become unresponsive for an arbitrary length of time."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2024-8998",
+    "description": [
+      "A Regular Expression Denial of Service (ReDoS) vulnerability exists in lunary-ai/lunary version git f07a845. The server uses the regex /{.*?}/ to match user-controlled strings. In the default JavaScript regex engine, this regex can take polynomial time to match certain crafted user inputs. As a result, an attacker can cause the server to hang for an arbitrary amount of time by submitting a specially crafted payload. This issue is fixed in version 1.4.26."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  },
+  {
+    "cve_id": "CVE-2024-9506",
+    "description": [
+      "Improper regular expression in Vue's parseHTML function leads to a potential regular expression denial of service vulnerability."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2025-0367",
+    "description": [
+      "In versions 3.1.0 and lower of the Splunk Supporting Add-on for Active Directory, also known as SA-ldapsearch, a vulnerable regular expression pattern could lead to a Regular Expression Denial of Service (ReDoS) attack."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2025-25285",
+    "description": [
+      "@octokit/endpoint turns REST API endpoints into generic request options. Starting in version 4.1.0 and prior to version 10.1.3, by crafting specific `options` parameters, the `endpoint.parse(options)` call can be triggered, leading to a regular expression denial-of-service (ReDoS) attack. This causes the program to hang and results in high CPU utilization. The issue occurs in the `parse` function within the `parse.ts` file of the npm package `@octokit/endpoint`. Version 10.1.3 contains a patch for the issue."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2025-25288",
+    "description": [
+      "@octokit/plugin-paginate-rest is the Octokit plugin to paginate REST API endpoint responses. For versions starting in 1.0.0 and prior to 11.4.1 of the npm package `@octokit/plugin-paginate-rest`, when calling `octokit.paginate.iterator()`, a specially crafted `octokit` instance—particularly with a malicious `link` parameter in the `headers` section of the `request`—can trigger a ReDoS attack. Version 11.4.1 contains a fix for the issue."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2025-25289",
+    "description": [
+      "@octokit/request-error is an error class for Octokit request errors. Starting in version 1.0.0 and prior to version 6.1.7, a Regular Expression Denial of Service (ReDoS) vulnerability exists in the processing of HTTP request headers. By sending an authorization header containing an excessively long sequence of spaces followed by a newline and \"@\", an attacker can exploit inefficient regular expression processing, leading to excessive resource consumption. This can significantly degrade server performance or cause a denial-of-service (DoS) condition, impacting availability. Version 6.1.7 contains a fix for the issue."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2025-25290",
+    "description": [
+      "@octokit/request sends parameterized requests to GitHub’s APIs with sensible defaults in browsers and Node. Starting in version 1.0.0 and prior to version 9.2.1, the regular expression `/<([^>]+)>; rel=\"deprecation\"/` used to match the `link` header in HTTP responses is vulnerable to a ReDoS (Regular Expression Denial of Service) attack. This vulnerability arises due to the unbounded nature of the regex's matching behavior, which can lead to catastrophic backtracking when processing specially crafted input. An attacker could exploit this flaw by sending a malicious `link` header, resulting in excessive CPU usage and potentially causing the server to become unresponsive, impacting service availability. Version 9.2.1 fixes the issue."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2025-26042",
+    "description": [
+      "Uptime Kuma >== 1.23.0 has a ReDoS vulnerability, specifically when an administrator creates a notification through the web service. If a string is provided it triggers catastrophic backtracking in the regular expression, leading to a ReDoS attack."
+    ],
+    "attackVector": null,
+    "attackComplexity": null,
+    "privilegesRequired": null,
+    "userInteraction": null,
+    "baseScore": null,
+    "baseSeverity": null,
+    "exploitabilityScore": null,
+    "impactScore": null
+  },
+  {
+    "cve_id": "CVE-2025-27220",
+    "description": [
+      "In the CGI gem before 0.4.2 for Ruby, a Regular Expression Denial of Service (ReDoS) vulnerability exists in the Util#escapeElement method."
+    ],
+    "attackVector": "NETWORK",
+    "attackComplexity": "LOW",
+    "privilegesRequired": "NONE",
+    "userInteraction": "NONE",
+    "baseScore": 7.5,
+    "baseSeverity": "HIGH",
+    "exploitabilityScore": 3.9,
+    "impactScore": 3.6
+  }
+]
