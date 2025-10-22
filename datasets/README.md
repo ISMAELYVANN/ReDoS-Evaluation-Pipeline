@@ -1,45 +1,80 @@
 # ReDoS-Evaluation-Pipeline
 
-## Description
-Ce dépôt contient les **résultats complets du pipeline d’évaluation ReDoS** développé dans le cadre de lessai de maîtrise à l’Université du Québec en Outaouais (UQO).  
-Il regroupe les étapes de prétraitement, de détection, d’étiquetage et d’analyse statistique des vulnérabilités ReDoS sur trois jeux de données distincts.
+## Description (Français)
+Ce dépôt contient les **résultats complets du pipeline d’évaluation ReDoS** développé dans le cadre de l’essai de maîtrise à l’Université du Québec en Outaouais (UQO).  
+Il regroupe les étapes de **prétraitement**, de **détection**, d’**étiquetage** et d’**analyse statistique** des vulnérabilités ReDoS sur trois jeux de données distincts.
 
-## Datasets
-Les trois jeux de données étudiés sont :
-- **1Regex_before** : expressions régulières avant correction ;
-- **Regex_after** : expressions régulières après correction ;
- > Ces deux ensembles précédents proviennent de projets GitHub comportant des vulnérabilités ReDoS recensées dans la base de données **CVEfixes**.  
-- **Regexlib** : expressions issues de la base publique **RegexLib**.
+---
 
-- **Regexlib** : expressions issues de la base publique RegexLib.
+##  Description (English)
+This repository contains the **complete results of the ReDoS evaluation pipeline**, developed as part of a Master’s thesis at the Université du Québec en Outaouais (UQO).  
+It includes all stages of **preprocessing**, **vulnerability detection**, **labeling**, and **statistical analysis** of ReDoS vulnerabilities across three different datasets.
 
-Chaque dataset comprend :
-- la version **cleaned** (regex valides après prétraitement) ;
-- la version **to_fix_2.txt** (résultats des outils de détection) ;
-- la version **labeled.csv** (étiquetée selon la détection multi-outils).
+---
 
-## Pipeline d’évaluation
-Le pipeline suit quatre étapes principales :
-1. **Extraction et nettoyage** des regex (sanitization et filtrage syntaxique)  
-2. **Détection** des vulnérabilités ReDoS à l’aide des outils : SafeRegex, ReScue, ReDoSHunter, Revealer, RAT  
-3. **Étiquetage et regroupement** des regex selon les résultats croisés  
-4. **Analyse et visualisation** : UpSet plots, tableaux de résultats et statistiques CVE
+##  Datasets
+The three analyzed datasets are:
 
-Les figures du pipeline et des requêtes SQL associées sont disponibles dans :
+- **Regex_before**: Regular expressions before correction  
+- **Regex_after**: Regular expressions after correction  
+  > These two datasets come from vulnerable GitHub projects listed in the **CVEfixes** database.  
+- **Regexlib**: Regular expressions collected from the public **RegexLib** repository  
+
+Each dataset includes:
+- a **cleaned** version (valid regex after preprocessing);  
+- a **to_fix_2.txt** version (detection tool outputs);  
+- a **labeled.csv** version (labeled from multi-tool detection results);  
+- and the **raw datasets** `regex_before.txt`, `regex_after.txt`, and `regexlib_onlyregex.txt` for full pipeline traceability.
+
+---
+
+## Pipeline d’évaluation / Evaluation Pipeline
+The ReDoS evaluation pipeline consists of four main steps:
+
+1. **Extraction and cleaning** of regular expressions (sanitization and syntax filtering)  
+2. **Detection** of ReDoS vulnerabilities using the tools:  
+   `SafeRegex`, `ReScue`, `ReDoSHunter`, `Revealer`, and `RAT`  
+3. **Labeling and aggregation** of regex patterns based on cross-tool results  
+4. **Analysis and visualization** through UpSet plots, intersection matrices, summary tables, and CVE-based statistics  
+
+Figures illustrating the pipeline and SQL queries:
 - `pipeline_diagram/pipeline_overview.png`
 - `pipeline_diagram/ReDoS_SQL_Query.png`
 - `pipeline_diagram/ReDoS_Vulnerabilities_Capture.png`
 
-## Analyses disponibles
-- `analyses/UPSETCHAR.pdf` : Figures d’UpSet montrant les intersections entre outils de détection  
-- `analyses/results_tables.pdf` : Tableaux récapitulatifs (datasets cleaned et détections croisées)  
-- `analyses/CVE_ReDoS_Analysis.pdf` : Étude statistique des CVEs liées aux vulnérabilités ReDoS  
-- 
-## Référence
-Les résultats et analyses sont présentés dans l’essai:  
-**“DETECTION ET CORRECTION AUTOMATISEES DES VULNERABILITES ReDoS: UNE APPROCHE EMPIRIQUE AU SERVICE DE LA CYBERSECURITE APPLIQUEE”**,  
-Ismaël-Yvann Mahassadi, Université du Québec en Outaouais, 2025.
+---
 
+## Analyses disponibles / Available Analyses
+- `analyses/UPSETCHAR.pdf` — UpSet figures showing detection intersections  
+- `analyses/results_tables.pdf` — Summary tables (cleaned datasets and cross-tool detections)  
+- `analyses/CVE_ReDoS_Analysis.pdf` — Statistical analysis of CVEs related to ReDoS vulnerabilities  
+- `analyses/redos_summary_filtered.json` — Filtered summary of ReDoS vulnerabilities from the NVD feeds  
+- `analyses/summary_statistics.csv` — Consolidated numerical data  
 
 ---
-© 2025 — ReDoS Evaluation Pipeline | Research Project @ UQO
+
+## Matrices d’intersection / Intersection Matrices
+The intersection matrices provide a **cross-analysis** of detection results from different ReDoS tools.  
+They highlight areas of **agreement** and **divergence** between static and dynamic analysis approaches, offering a synthetic view of detection consistency.
+
+Files available:
+- `analyses/intersection_matrix_regex_before.csv` — Cross results for **Regex_before** dataset  
+- `analyses/intersection_matrix_regex_after.csv` — Cross results for **Regex_after** dataset  
+- `analyses/intersection_matrix_regexlib.csv` — Cross results for **RegexLib** dataset  
+
+Each matrix reports, for every tool, the number of detected vulnerable regexes and multi-tool overlaps (double, triple, or quadruple detections).
+
+---
+
+## Référence / Reference
+Les résultats et analyses sont présentés dans l’essai de maîtrise :  
+**“Détection et correction automatisées des vulnérabilités ReDoS : une approche empirique au service de la cybersécurité appliquée.”**  
+_Ismaël-Yvann Mahassadi_, Université du Québec en Outaouais, 2025.
+
+Results and analyses are detailed in the Master’s thesis:  
+**“Automated Detection and Correction of ReDoS Vulnerabilities: An Empirical Approach to Applied Cybersecurity.”**  
+_Ismaël Yvann Mahassadi_, Université du Québec en Outaouais, 2025.
+
+---
+
+© 2025 — **ReDoS Evaluation Pipeline** | Research Project @ UQO  
