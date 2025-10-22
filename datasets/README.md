@@ -75,6 +75,25 @@ Results and analyses are detailed in the Master’s thesis:
 **“Automated Detection and Correction of ReDoS Vulnerabilities: An Empirical Approach to Applied Cybersecurity.”**  
 _Ismaël Yvann Mahassadi_, Université du Québec en Outaouais, 2025.
 
+## How to Cite this Repository / Comment citer ce dépôt
+
+If you use the datasets, results, or figures from this repository in your research or academic work, please cite it as follows:
+
+> **Mahassadi, Ismaël-Yvann (2025).** *ReDoS-Evaluation-Pipeline: Detection and Evaluation of Regular Expression Denial of Service (ReDoS) Vulnerabilities.*  
+> Université du Québec en Outaouais (UQO). GitHub Repository: [https://github.com/ISMAELYVANN/ReDoS-Evaluation-Pipeline](https://github.com/ISMAELYVANN/ReDoS-Evaluation-Pipeline)
+
+**BibTeX citation format:**
+```bibtex
+@misc{Mahassadi2025ReDoS,
+  author       = {Mahassadi, Ismaël Yvann},
+  title        = {ReDoS-Evaluation-Pipeline: Detection and Evaluation of Regular Expression Denial of Service (ReDoS) Vulnerabilities},
+  year         = {2025},
+  institution  = {Université du Québec en Outaouais},
+  howpublished = {\url{https://github.com/ISMAELYVANN/ReDoS-Evaluation-Pipeline}},
+  note         = {Master’s   Essay Project on ReDoS Vulnerabilities Detection and Evaluation}
+}
+
+
 ---
 
 © 2025 — **ReDoS Evaluation Pipeline** | Research Project @ UQO  
